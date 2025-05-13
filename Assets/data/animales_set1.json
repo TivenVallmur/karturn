@@ -1,0 +1,74 @@
+[
+  {
+    "categoria": "Animales",
+    "ingles": "Dog",
+    "espanol": "Perro",
+    "imagen": "Assets/images/animales/dog.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Cat",
+    "espanol": "Gato",
+    "imagen": "Assets/images/animales/cat.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Elephant",
+    "espanol": "Elefante",
+    "imagen": "Assets/images/animales/elephant.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Lion",
+    "espanol": "León",
+    "imagen": "Assets/images/animales/lion.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Monkey",
+    "espanol": "Mono",
+    "imagen": "Assets/images/animales/monkey.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Zebra",
+    "espanol": "Cebra",
+    "imagen": "Assets/images/animales/zebra.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Tiger",
+    "espanol": "Tigre",
+    "imagen": "Assets/images/animales/tiger.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Bear",
+    "espanol": "Oso",
+    "imagen": "Assets/images/animales/bear.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Giraffe",
+    "espanol": "Jirafa",
+    "imagen": "Assets/images/animales/giraffe.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Horse",
+    "espanol": "Caballo",
+    "imagen": "Assets/images/animales/horse.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Rabbit",
+    "espanol": "Conejo",
+    "imagen": "Assets/images/animales/rabbit.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Frog",
+    "espanol": "Rana",
+    "imagen": "Assets/images/animales/frog.png"
+  }
+]

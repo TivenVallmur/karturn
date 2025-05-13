@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karturn - Selección de Categoría</title>
+  <link rel="stylesheet" href="Css/style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+    <img src="Assets/images/LogoV2.png" alt="" class="logo-img">    
+    </div>
+    <ul>
+      <li>Opción 1</li>
+      <li>Opción 2</li>
+      <li>Opción 3</li>
+      <li>Opción 4</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <header>
+      <nav>
+        <span>Home</span>
+        <span>Dashboard</span>
+        <span>News</span>
+      </nav>
+      <div class="user">Nombre usuario</div>
+    </header>
+
+    <section class="category-section">
+      <h2>Selecciona una categoría</h2>
+      <div class="cards-grid">
+        <!-- Tarjetas -->
+        <div class="card">
+          <h3>Animales</h3>
+          <!-- <button onclick="startGame('animales')">Seleccionar</button> -->
+          <button onclick="location.href='game.html?categoria=animales'">Seleccionar</button>
+
+        </div>
+        <!-- Agrega más categorías aquí -->
+      </div>
+    </section>
+  </div>
+
+  <script src="Js/main.js"></script>
+</body>
+</html>
