@@ -1,0 +1,74 @@
+[
+  {
+    "categoria": "Verbos irregulares",
+    "ingles": "Take",
+    "espanol": "Tomar",
+    "imagen": "Assets/images/verbos_irregulares/take.png"
+  },
+  {
+    "categoria": "Verbos irregulares",
+    "ingles": "Teach",
+    "espanol": "Enseñar",
+    "imagen": "Assets/images/verbos_irregulares/teach.png"
+  },
+  {
+    "categoria": "Verbos irregulares",
+    "ingles": "Throw",
+    "espanol": "Lanzar",
+    "imagen": "Assets/images/verbos_irregulares/throw.png"
+  },
+  {
+    "categoria": "Verbos irregulares",
+    "ingles": "Understand",
+    "espanol": "Entender",
+    "imagen": "Assets/images/verbos_irregulares/understand.png"
+  },
+  {
+    "categoria": "Verbos irregulares",
+    "ingles": "Wake",
+    "espanol": "Despertar",
+    "imagen": "Assets/images/verbos_irregulares/wake.png"
+  },
+  {
+    "categoria": "Verbos irregulares",
+    "ingles": "Wear",
+    "espanol": "Usar (ropa)",
+    "imagen": "Assets/images/verbos_irregulares/wear.png"
+  },
+  {
+    "categoria": "Verbos irregulares",
+    "ingles": "Win",
+    "espanol": "Ganar",
+    "imagen": "Assets/images/verbos_irregulares/win.png"
+  },
+  {
+    "categoria": "Verbos irregulares",
+    "ingles": "Write",
+    "espanol": "Escribir",
+    "imagen": "Assets/images/verbos_irregulares/write.png"
+  },
+  {
+    "categoria": "Verbos irregulares",
+    "ingles": "Begin",
+    "espanol": "Comenzar",
+    "imagen": "Assets/images/verbos_irregulares/begin.png"
+  },
+  {
+    "categoria": "Verbos irregulares",
+    "ingles": "Go",
+    "espanol": "Ir",
+    "imagen": "Assets/images/verbos_irregulares/go.png"
+  },
+  {
+    "categoria": "Verbos irregulares",
+    "ingles": "Give",
+    "espanol": "Dar",
+    "imagen": "Assets/images/verbos_irregulares/give.png"
+  },
+  {
+    "categoria": "Verbos irregulares",
+    "ingles": "Sing",
+    "espanol": "Cantar",
+    "imagen": "Assets/images/verbos_irregulares/sing.png"
+  }
+]

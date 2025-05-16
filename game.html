@@ -8,24 +8,23 @@
   <link rel="stylesheet" href="Css/style.css" />
 </head>
 <body>
+  <button class="sidebar-toggle" aria-label="Abrir menú lateral" onclick="toggleSidebar()">☰</button>
 
-  <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
-
-  <div class="sidebar">
+  <aside class="sidebar">
     <div class="logo text-center py-3">
-      <img src="Assets/images/LogoV2.png" alt="Logo Karturn" class="logo-img" />
+      <img src="Assets/images/LogoV2.png" alt="Logo de Karturn" class="logo-img" />
     </div>
     <ul class="nav flex-column px-3">
       <li class="nav-item"><a href="index.html" class="btn btn-primary mb-2 w-100">Inicio</a></li>
       <li class="nav-item"><button class="btn btn-info mb-2 w-100">Opción 1</button></li>
       <li class="nav-item"><button class="btn btn-info w-100">Opción 2</button></li>
     </ul>
-  </div>
+  </aside>
 
-  <div class="main">
-    <header class="bg-success text-white px-4 py-2">
+  <main class="main">
+    <header class="bg-success text-white px-4 py-2 d-flex justify-content-between align-items-center flex-wrap">
       <nav class="d-flex gap-3">
-        <span><a href="index.html" class="text-white text-decoration-none">Home</a></span>
+        <a href="index.html" class="text-white text-decoration-none">Inicio</a>
         <span>Juego</span>
         <span>Resultados</span>
       </nav>
@@ -37,12 +36,12 @@
 
       <div class="scrollable-board">
         <div class="row g-3" id="gameBoard">
-          <!-- Cartas aquí -->
+          <!-- Las cartas se renderizan con JS -->
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
-  <script src="Js/game.js"></script>
+  <script src="Js/game.js" defer></script>
 </body>
 </html>

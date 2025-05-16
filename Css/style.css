@@ -1,48 +1,61 @@
 html, body {
-  height: 100%;
   margin: 0;
   font-family: sans-serif;
-  overflow: hidden; /* Evita scroll global */
-  display: flex;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #d1fffc;
 }
 
+.sidebar.show {
+    transform: translateX(0);
+  }
+
+/* Sidebar */
 .sidebar {
-  background: linear-gradient(#b3f0ff, #00ccff);
+  position: fixed;
+  transform: translateX(-100%);
+  width: 165px;
+  left: 0;
+  top: 0;
   width: 200px;
-  padding: 20px 10px;
-  flex-shrink: 0;
-  height: 100vh;
-  overflow-y: auto;
+  height: 100%;
+  background: linear-gradient(#b3f0ff, #00ccff);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
 }
 
-.logo img {
+.sidebar-toggle {
+  display: block;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1100;
+  background-color: #00bfff;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logo-img {
   width: 80px;
   height: 80px;
   object-fit: contain;
   border-radius: 50%;
-  display: block;
-  margin: 0 auto 20px;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar li {
-  margin-bottom: 15px;
 }
 
 .main {
-  flex: 1;
-  background: linear-gradient(#b3ffff, #66ffff);
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  overflow: hidden;
+  margin-left: 200px;
+  padding: 20px;
 }
 
+/* Header */
 header {
   background: #aaffaa;
   padding: 10px 20px;
@@ -58,15 +71,15 @@ header {
   padding: 20px;
 }
 
-.game-board {
+/* Tablero */
+#gameBoard {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
-  justify-items: center;
+  gap: 15px;
 }
 
+/* Cartas */
 .flip-card {
-  background-color: transparent;
   width: 120px;
   height: 160px;
   perspective: 1000px;
@@ -76,8 +89,8 @@ header {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.6s;
   transform-style: preserve-3d;
+  transition: transform 0.6s;
 }
 
 .flip-card.flipped .flip-card-inner {
@@ -91,15 +104,17 @@ header {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .flip-card-front {
   background: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   transform: rotateY(180deg);
+  padding: 10px;
+  text-align: center;
 }
 
 .flip-card-front img {
@@ -108,17 +123,8 @@ header {
   margin-bottom: 5px;
 }
 
-.flip-card-front p {
-  margin: 0;
-  font-size: 14px;
-  text-align: center;
-}
-
 .flip-card-back {
   background: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .flip-card-back img {
@@ -128,30 +134,133 @@ header {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  body {
-    flex-direction: column;
-  }
-
+@media (max-width: 768px) and (orientation: portrait) {
   .sidebar {
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-around;
+    transform: translateX(-100%);
+    width: 165px;
   }
 
-  .sidebar ul {
-    display: flex;
-    gap: 10px;
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggle {
+    display: block;
   }
 
   .main {
-    height: auto;
+    margin-left: 0;
+    padding: 10px;
   }
 
-  .scrollable-board {
-    max-height: unset;
-    overflow-y: visible;
+  #gameBoard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(73px, 1fr));
+    gap: 10px;
+  }
+
+  .flip-card {
+    width: 110%;
+    height: 130px;
+  }
+
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .flip-card-front img {
+    max-height: 40px;
+  }
+
+  .flip-card-front h2,
+  .flip-card-front p {
+    font-size: 11px; /* Texto más pequeño */
+    margin: 2px 0;
+  }
+
+.flip-card-back img {
+  /* width: auto; */
+  /* height: auto; */
+  max-width: 100%;
+  object-fit: initial; /* Muestra toda la imagen sin recortarla */
+  /*padding: 5px; /* Opcional: para dar un pequeño margen */
+  /* box-sizing: border-box; */
+}
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 10%;
+  }
+}
+
+/* Estilos para pantallas en modo horizontal */
+@media (orientation: landscape) and (max-width: 780px){  
+  /* body {
+    background-color: lightgreen;
+  } */
+
+  .sidebar {
+    transform: translateX(-100%);
+    width: 165px;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  #gameBoard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 10px;
+  }
+
+  .flip-card {
+    width: 100%;
+    height: 90px;
+  }
+
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .flip-card-front img {
+    max-height: 40px;
+  }
+
+  .flip-card-front h2,
+  .flip-card-front p {
+    font-size: 12px; /* Texto más pequeño */
+    margin: 2px 0;
+  }
+
+.flip-card-back img {
+  /* width: auto; */
+  /* height: auto; */
+  max-width: 100%;
+  object-fit: initial; /* Muestra toda la imagen sin recortarla */
+  /*padding: 5px; /* Opcional: para dar un pequeño margen */
+  /* box-sizing: border-box; */
+}
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 10%;
   }
 }
