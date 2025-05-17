@@ -1,0 +1,446 @@
+[
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Accept",
+    "espanol": "Aceptar",
+    "imagen": "Assets/images/verbos_regulares/accept.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Add",
+    "espanol": "Agregar",
+    "imagen": "Assets/images/verbos_regulares/add.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Allow",
+    "espanol": "Permitir",
+    "imagen": "Assets/images/verbos_regulares/allow.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Answer",
+    "espanol": "Responder",
+    "imagen": "Assets/images/verbos_regulares/answer.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Bake",
+    "espanol": "Hornear",
+    "imagen": "Assets/images/verbos_regulares/bake.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Brush",
+    "espanol": "Cepillar",
+    "imagen": "Assets/images/verbos_regulares/brush.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Call",
+    "espanol": "Llamar",
+    "imagen": "Assets/images/verbos_regulares/call.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Clean",
+    "espanol": "Limpiar",
+    "imagen": "Assets/images/verbos_regulares/clean.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Climb",
+    "espanol": "Escalar",
+    "imagen": "Assets/images/verbos_regulares/climb.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Close",
+    "espanol": "Cerrar",
+    "imagen": "Assets/images/verbos_regulares/close.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Compare",
+    "espanol": "Comparar",
+    "imagen": "Assets/images/verbos_regulares/compare.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Cook",
+    "espanol": "Cocinar",
+    "imagen": "Assets/images/verbos_regulares/cook.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Create",
+    "espanol": "Crear",
+    "imagen": "Assets/images/verbos_regulares/create.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Dance",
+    "espanol": "Bailar",
+    "imagen": "Assets/images/verbos_regulares/dance.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Deliver",
+    "espanol": "Entregar",
+    "imagen": "Assets/images/verbos_regulares/deliver.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Enjoy",
+    "espanol": "Disfrutar",
+    "imagen": "Assets/images/verbos_regulares/enjoy.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Fix",
+    "espanol": "Arreglar",
+    "imagen": "Assets/images/verbos_regulares/fix.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Help",
+    "espanol": "Ayudar",
+    "imagen": "Assets/images/verbos_regulares/help.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Hug",
+    "espanol": "Abrazar",
+    "imagen": "Assets/images/verbos_regulares/hug.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Improve",
+    "espanol": "Mejorar",
+    "imagen": "Assets/images/verbos_regulares/improve.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Invite",
+    "espanol": "Invitar",
+    "imagen": "Assets/images/verbos_regulares/invite.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Jump",
+    "espanol": "Saltar",
+    "imagen": "Assets/images/verbos_regulares/jump.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Kill",
+    "espanol": "Matar",
+    "imagen": "Assets/images/verbos_regulares/kill.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Laugh",
+    "espanol": "Reír",
+    "imagen": "Assets/images/verbos_regulares/laugh.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Listen",
+    "espanol": "Escuchar",
+    "imagen": "Assets/images/verbos_regulares/listen.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Look",
+    "espanol": "Mirar",
+    "imagen": "Assets/images/verbos_regulares/look.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Love",
+    "espanol": "Amar",
+    "imagen": "Assets/images/verbos_regulares/love.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Need",
+    "espanol": "Necesitar",
+    "imagen": "Assets/images/verbos_regulares/need.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Open",
+    "espanol": "Abrir",
+    "imagen": "Assets/images/verbos_regulares/open.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Paint",
+    "espanol": "Pintar",
+    "imagen": "Assets/images/verbos_regulares/paint.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Play",
+    "espanol": "Jugar",
+    "imagen": "Assets/images/verbos_regulares/play.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Pull",
+    "espanol": "Halar",
+    "imagen": "Assets/images/verbos_regulares/pull.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Push",
+    "espanol": "Empujar",
+    "imagen": "Assets/images/verbos_regulares/push.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Rain",
+    "espanol": "Llover",
+    "imagen": "Assets/images/verbos_regulares/rain.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Show",
+    "espanol": "Mostrar",
+    "imagen": "Assets/images/verbos_regulares/show.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Talk",
+    "espanol": "Hablar",
+    "imagen": "Assets/images/verbos_regulares/talk.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Thank",
+    "espanol": "Agradecer",
+    "imagen": "Assets/images/verbos_regulares/thank.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Travel",
+    "espanol": "Viajar",
+    "imagen": "Assets/images/verbos_regulares/travel.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Admire",
+    "espanol": "Admirar",
+    "imagen": "Assets/images/verbos_regulares/admire.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Announce",
+    "espanol": "Anunciar",
+    "imagen": "Assets/images/verbos_regulares/announce.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Arrange",
+    "espanol": "Organizar",
+    "imagen": "Assets/images/verbos_regulares/arrange.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Beg",
+    "espanol": "Rogar",
+    "imagen": "Assets/images/verbos_regulares/beg.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Borrow",
+    "espanol": "Pedir prestado",
+    "imagen": "Assets/images/verbos_regulares/borrow.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Complain",
+    "espanol": "Quejarse",
+    "imagen": "Assets/images/verbos_regulares/complain.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Compare",
+    "espanol": "Comparar",
+    "imagen": "Assets/images/verbos_regulares/compare2.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Count",
+    "espanol": "Contar",
+    "imagen": "Assets/images/verbos_regulares/count.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Cry",
+    "espanol": "Llorar",
+    "imagen": "Assets/images/verbos_regulares/cry.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Divide",
+    "espanol": "Dividir",
+    "imagen": "Assets/images/verbos_regulares/divide.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Earn",
+    "espanol": "Ganar (dinero)",
+    "imagen": "Assets/images/verbos_regulares/earn.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Explain",
+    "espanol": "Explicar",
+    "imagen": "Assets/images/verbos_regulares/explain.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Fill",
+    "espanol": "Llenar",
+    "imagen": "Assets/images/verbos_regulares/fill.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Guess",
+    "espanol": "Adivinar",
+    "imagen": "Assets/images/verbos_regulares/guess.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Hurry",
+    "espanol": "Apurarse",
+    "imagen": "Assets/images/verbos_regulares/hurry.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Imagine",
+    "espanol": "Imaginar",
+    "imagen": "Assets/images/verbos_regulares/imagine.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Include",
+    "espanol": "Incluir",
+    "imagen": "Assets/images/verbos_regulares/include.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Introduce",
+    "espanol": "Presentar",
+    "imagen": "Assets/images/verbos_regulares/introduce.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Join",
+    "espanol": "Unirse",
+    "imagen": "Assets/images/verbos_regulares/join.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Jog",
+    "espanol": "Trotar",
+    "imagen": "Assets/images/verbos_regulares/jog.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Knock",
+    "espanol": "Tocar (una puerta)",
+    "imagen": "Assets/images/verbos_regulares/knock.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Learn",
+    "espanol": "Aprender",
+    "imagen": "Assets/images/verbos_regulares/learn.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Like",
+    "espanol": "Gustar",
+    "imagen": "Assets/images/verbos_regulares/like.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Mark",
+    "espanol": "Marcar",
+    "imagen": "Assets/images/verbos_regulares/mark.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Marry",
+    "espanol": "Casarse",
+    "imagen": "Assets/images/verbos_regulares/marry.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Measure",
+    "espanol": "Medir",
+    "imagen": "Assets/images/verbos_regulares/measure.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Move",
+    "espanol": "Mover",
+    "imagen": "Assets/images/verbos_regulares/move.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Notice",
+    "espanol": "Notar",
+    "imagen": "Assets/images/verbos_regulares/notice.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Pack",
+    "espanol": "Empacar",
+    "imagen": "Assets/images/verbos_regulares/pack.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Perform",
+    "espanol": "Actuar / Realizar",
+    "imagen": "Assets/images/verbos_regulares/perform.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Practice",
+    "espanol": "Practicar",
+    "imagen": "Assets/images/verbos_regulares/practice.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Receive",
+    "espanol": "Recibir",
+    "imagen": "Assets/images/verbos_regulares/receive.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Remember",
+    "espanol": "Recordar",
+    "imagen": "Assets/images/verbos_regulares/remember.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Share",
+    "espanol": "Compartir",
+    "imagen": "Assets/images/verbos_regulares/share.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Smoke",
+    "espanol": "Fumar",
+    "imagen": "Assets/images/verbos_regulares/smoke.png"
+  },
+  {
+    "categoria": "Verbos regulares",
+    "ingles": "Study",
+    "espanol": "Estudiar",
+    "imagen": "Assets/images/verbos_regulares/study.png"
+  }
+]
