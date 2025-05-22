@@ -1,0 +1,218 @@
+[
+  {
+    "categoria": "Animales",
+    "ingles": "Dog",
+    "espanol": "Perro",
+    "imagen": "Assets/images/animales/dog.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Cat",
+    "espanol": "Gato",
+    "imagen": "Assets/images/animales/cat.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Elephant",
+    "espanol": "Elefante",
+    "imagen": "Assets/images/animales/elephant.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Lion",
+    "espanol": "León",
+    "imagen": "Assets/images/animales/lion.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Monkey",
+    "espanol": "Mono",
+    "imagen": "Assets/images/animales/monkey.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Zebra",
+    "espanol": "Cebra",
+    "imagen": "Assets/images/animales/zebra.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Tiger",
+    "espanol": "Tigre",
+    "imagen": "Assets/images/animales/tiger.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Bear",
+    "espanol": "Oso",
+    "imagen": "Assets/images/animales/bear.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Giraffe",
+    "espanol": "Jirafa",
+    "imagen": "Assets/images/animales/giraffe.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Horse",
+    "espanol": "Caballo",
+    "imagen": "Assets/images/animales/horse.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Rabbit",
+    "espanol": "Conejo",
+    "imagen": "Assets/images/animales/rabbit.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Frog",
+    "espanol": "Rana",
+    "imagen": "Assets/images/animales/frog.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Bear",
+    "espanol": "Oso",
+    "imagen": "Assets/images/animales/bear.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Horse",
+    "espanol": "Caballo",
+    "imagen": "Assets/images/animales/horse.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Monkey",
+    "espanol": "Mono",
+    "imagen": "Assets/images/animales/monkey.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Penguin",
+    "espanol": "Pingüino",
+    "imagen": "Assets/images/animales/penguin.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Owl",
+    "espanol": "Búho",
+    "imagen": "Assets/images/animales/owl.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Zebra",
+    "espanol": "Cebra",
+    "imagen": "Assets/images/animales/zebra.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Tiger",
+    "espanol": "Tigre",
+    "imagen": "Assets/images/animales/tiger.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Kangaroo",
+    "espanol": "Canguro",
+    "imagen": "Assets/images/animales/kangaroo.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Hedgehog",
+    "espanol": "Erizo",
+    "imagen": "Assets/images/animales/hedgehog.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Parrot",
+    "espanol": "Loro",
+    "imagen": "Assets/images/animales/parrot.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Turtle",
+    "espanol": "Tortuga",
+    "imagen": "Assets/images/animales/turtle.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Rabbit",
+    "espanol": "Conejo",
+    "imagen": "Assets/images/animales/rabbit.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Whale",
+    "espanol": "Ballena",
+    "imagen": "Assets/images/animales/whale.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Shark",
+    "espanol": "Tiburón",
+    "imagen": "Assets/images/animales/shark.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Frog",
+    "espanol": "Rana",
+    "imagen": "Assets/images/animales/frog.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Dolphin",
+    "espanol": "Delfín",
+    "imagen": "Assets/images/animales/dolphin.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Eagle",
+    "espanol": "Águila",
+    "imagen": "Assets/images/animales/eagle.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Wolf",
+    "espanol": "Lobo",
+    "imagen": "Assets/images/animales/wolf.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Camel",
+    "espanol": "Camello",
+    "imagen": "Assets/images/animales/camel.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Crocodile",
+    "espanol": "Cocodrilo",
+    "imagen": "Assets/images/animales/crocodile.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Squirrel",
+    "espanol": "Ardilla",
+    "imagen": "Assets/images/animales/squirrel.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Koala",
+    "espanol": "Koala",
+    "imagen": "Assets/images/animales/koala.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Flamingo",
+    "espanol": "Flamenco",
+    "imagen": "Assets/images/animales/flamingo.png"
+  },
+  {
+    "categoria": "Animales",
+    "ingles": "Raccoon",
+    "espanol": "Mapache",
+    "imagen": "Assets/images/animales/raccoon.png"
+  }
+]

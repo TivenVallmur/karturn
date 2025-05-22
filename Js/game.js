@@ -3,6 +3,10 @@ const params = new URLSearchParams(window.location.search);
 const categoria = params.get("categoria") || "Desconocida";
 document.getElementById("categoria-nombre").textContent = categoria;
 
+// Reemplazar guiones bajos por espacios para mostrar bonito
+const nombreFormateado = categoria.replace(/_/g, " ");
+document.getElementById("categoria-nombre").textContent = nombreFormateado;
+
 // Mostrar u ocultar menú lateral
 function toggleSidebar() {
   document.querySelector(".sidebar").classList.toggle("show");
@@ -13,10 +17,21 @@ let primeraCarta = null;
 let segundaCarta = null;
 let bloqueo = false;
 
-// Iniciar juego con archivo por defecto
-// const rutaJson = "Assets/data/animales_set2.json";
-const rutaJson = "Assets/data/verbos_irregulares_3.json";
-renderizarCartasDesdeJSON(rutaJson);
+// Iniciar juego cargando dinámicamente el archivo
+const rutaJson = categoria !== "Desconocida"
+  ? `Assets/data/${categoria}.json`
+  : "Assets/data/verbos_irregulares.json";
+
+  renderizarCartasDesdeJSON(rutaJson);
+
+function obtenerCantidadCartas() {
+  const esMovil = /Mobi|Android/i.test(navigator.userAgent);
+  const esVertical = window.innerHeight > window.innerWidth;
+
+  if (esMovil && esVertical) return 20;
+  return 24;
+}
+
 
 // Función para renderizar cartas
 function renderizarCartasDesdeJSON(jsonPath) {
@@ -26,8 +41,26 @@ function renderizarCartasDesdeJSON(jsonPath) {
       const board = document.getElementById("gameBoard");
       board.innerHTML = "";
 
-      const cartas = [...data, ...data].sort(() => Math.random() - 0.5);
+      const cantidadCartas = obtenerCantidadCartas(); // 20 o 24
+      const cantidadPares = cantidadCartas / 2;
 
+      // ✅ Eliminar duplicados basados en el campo 'ingles'
+      const unicos = [];
+      const inglesVistos = new Set();
+
+      data.forEach(item => {
+        if (!inglesVistos.has(item.ingles)) {
+          inglesVistos.add(item.ingles);
+          unicos.push(item);
+        }
+      });
+
+      // 🔄 Mezclar y tomar solo la cantidad necesaria de pares únicos
+      const seleccion = unicos.sort(() => Math.random() - 0.5).slice(0, cantidadPares);
+
+      // 🎯 Duplicar para formar los pares, y mezclar de nuevo
+      const cartas = [...seleccion, ...seleccion].sort(() => Math.random() - 0.5);
+      
       cartas.forEach(animal => {
         const flipCard = document.createElement("div");
         flipCard.className = "flip-card";
@@ -73,12 +106,17 @@ function renderizarCartasDesdeJSON(jsonPath) {
     .catch(err => console.error("Error al cargar el JSON:", err));
 }
 
+window.addEventListener("orientationchange", () => {
+  // Lógica para recargar el tablero dinámicamente
+  renderizarCartasDesdeJSON(rutaJson);
+});
+
 // Lógica al hacer clic en una carta
 function manejarClickCarta(carta, animal) {
   if (bloqueo || carta.classList.contains("flipped")) return;
 
   carta.classList.add("flipped");
-
+  responsiveVoice.speak(animal.ingles, "US English Female");
   if (!primeraCarta) {
     primeraCarta = { carta, animal };
     return;
