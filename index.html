@@ -4,52 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Karturn - Selección de Categoría</title>
-  <link rel="stylesheet" href="Css/style.css" />
+  <link rel="stylesheet" href="Css/layout.css" />
+  <link rel="stylesheet" href="Css/index.css" />
 </head>
 <body>
-  <div class="sidebar">
-    <div class="logo">
-    <img src="Assets/images/LogoV2.png" alt="" class="logo-img">    
-    </div>
-    <ul>
-      <li>Opción 1</li>
-      <li>Opción 2</li>
-      <li>Opción 3</li>
-      <li>Opción 4</li>
-    </ul>
-  </div>
-
-  <div class="main">
-    <header>
-      <nav>
-        <span>Home</span>
-        <span>Dashboard</span>
-        <span>News</span>
-      </nav>
-      <div class="user">Nombre usuario</div>
-    </header>
-
-    <section class="category-section">
-      <h2>Selecciona una categoría</h2>
-      <div class="cards-grid">
-        <!-- Tarjetas -->
-        <div class="card">
-          <h3>Animales</h3>
-          <button onclick="location.href='game.html?categoria=animales'">Seleccionar</button>
-        </div>
-        <div class="card">
-          <h3>Verbos Irregulares</h3>
-          <button onclick="location.href='game.html?categoria=verbos_irregulares'">Seleccionar</button>
-        </div>
-        <div class="card">
-          <h3>Verbos Regulares</h3>
-          <button onclick="location.href='game.html?categoria=verbos_regulares'">Seleccionar</button>
-        </div>
-          <!-- Agrega más categorías aquí -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo text-center py-3">
+        <img src="Assets/images/LogoV2.png" alt="Logo de Karturn" class="logo-img" />
       </div>
-    </section>
+      <nav class="sidebar-nav">
+        <button>Opción 1</button>
+        <button>Opción 2</button>
+        <button>Opción 3</button>
+        <button>Opción 4</button>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <nav class="top-nav">
+          <span>Home</span>
+          <span>Dashboard</span>
+          <span>News</span>
+        </nav>
+        <div class="user-info">Nombre usuario</div>
+      </header>
+
+      <!-- Category Section -->
+      <section class="categories">
+        <h2>Select Category</h2>
+        <div class="cards-container">
+          <!-- Repetir esto para cada categoría -->
+          
+          <!-- ... -->
+        </div>
+      </section>
+    </main>    
   </div>
 
-  <script src="Js/main.js"></script>
+  <script src="Js/main.js" defer></script>
+
 </body>
 </html>

@@ -1,6 +1,5 @@
-// Obtener categoría desde la URL
-const params = new URLSearchParams(window.location.search);
-const categoria = params.get("categoria") || "Desconocida";
+const categoria = localStorage.getItem("selectedCategory") || "Desconocida";
+
 document.getElementById("categoria-nombre").textContent = categoria;
 
 // Reemplazar guiones bajos por espacios para mostrar bonito
