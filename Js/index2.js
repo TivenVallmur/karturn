@@ -1,8 +1,4 @@
-// Mostrar u ocultar menú lateral
-function toggleSidebar() {
-  document.querySelector(".sidebar").classList.toggle("show");
-}
-
+// Cargar las categorías desde el archivo JSON y crear tarjetas
 fetch('Assets/data/categories.json')
   .then(response => response.json())
   .then(categories => {

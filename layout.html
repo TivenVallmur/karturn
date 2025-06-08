@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Karturn - Selección de Categoría</title>
   <link rel="stylesheet" href="Css/layout.css" />
-  <link rel="stylesheet" href="Css/index.css" />
 </head>
 <body>
   <div class="container">
@@ -18,38 +17,32 @@
         <img src="Assets/images/LogoV2.png" alt="Logo de Karturn" class="logo-img" />
       </div>
       <nav class="sidebar-nav">
-        <button>Opción 1</button>
-        <button>Opción 2</button>
-        <button>Opción 3</button>
-        <button>Opción 4</button>
+        <button>Home</button>
+        <button>You</button>
+        <button>Select category</button>
       </nav>
     </aside>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="main main-content">
       <!-- Header -->
       <header class="header">
         <nav class="top-nav">
-          <span>Home</span>
-          <span>Dashboard</span>
-          <span>News</span>
+          <span>Home</span>          
+            <button onclick="cargarVista('index2')">Select category</button>
+          </span>
         </nav>
-        <div class="user-info">Nombre usuario</div>
       </header>
 
-      <!-- Category Section -->
-      <section class="categories">
-        <h2>Select Category</h2>
-        <div class="cards-container">
-          <!-- Repetir esto para cada categoría -->
-          
-          <!-- ... -->
-        </div>
+      <!-- Views Section -->
+      <section id="view-section">
       </section>
+
+      
     </main>    
   </div>
 
-  <script src="Js/main.js" defer></script>
+  <script src="Js/layout.js" defer></script>
 
 </body>
 </html>
