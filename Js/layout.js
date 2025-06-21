@@ -4,6 +4,9 @@ function toggleSidebar() {
 }
 
 function cargarVista(nombreVista) {
+
+  console.log(`Cargando vista: ${nombreVista}`);
+
   // Cargar HTML
   fetch(`${nombreVista}.html`)
     .then(response => {
@@ -11,11 +14,17 @@ function cargarVista(nombreVista) {
       return response.text();
     })
     .then(html => {
+      ocultarIntro();
+
       document.getElementById("view-section").innerHTML = html;
 
       // Eliminar CSS anterior (si existe)
       const cssExistente = document.getElementById("vista-css");
       if (cssExistente) cssExistente.remove();
+
+      // Eliminar JS anterior
+      const scriptExistente = document.getElementById("vista-js");
+      if (scriptExistente) scriptExistente.remove();
 
       // Insertar nuevo CSS
       const link = document.createElement("link");
@@ -37,36 +46,29 @@ function cargarVista(nombreVista) {
     });
 }
 
+function irAlInicio() {
+  // Mostrar la introducción
+  const intro = document.getElementById("welcome");
+  if (intro) intro.style.display = "block";
 
-// fetch('Assets/data/categories.json')
-//   .then(response => response.json())
-//   .then(categories => {
-//     const cardsContainer = document.querySelector('.cards-container');
+  // Limpiar la vista dinámica
+  const vista = document.getElementById("view-section");
+  if (vista) vista.innerHTML = "";
 
-//     categories.forEach(category => {
-//       const card = document.createElement('div');
-//       card.classList.add('card');
+  // Eliminar CSS y JS cargados dinámicamente
+  const css = document.getElementById("vista-css");
+  if (css) css.remove();
 
-//       const categoryName = document.createElement('p');
-//       // Reemplazar guiones bajos por espacios para mostrar bonito
-//       const nombreFormateado = category.replace(/_/g, " ");
-//       categoryName.textContent = nombreFormateado;
+  const js = document.getElementById("vista-js");
+  if (js) js.remove();
 
-//       const selectButton = document.createElement('button');
-//       selectButton.textContent = 'Seleccionar';
-//       selectButton.addEventListener('click', () => {
-//         startGame(category);
-//       });
+  // Limpiar selección previa
+  localStorage.clear();
+  localStorage.removeItem("selectedCategory");
+  localStorage.removeItem("selectedSubcategory");
+}
 
-//       card.appendChild(categoryName);
-//       card.appendChild(selectButton);
-//       cardsContainer.appendChild(card);
-//     });
-//   });
-
-
-// Función que guarda la categoría seleccionada y redirige
-function startGame(category) {
-  localStorage.setItem('selectedCategory', category);
-  window.location.href = 'game.html';
+function ocultarIntro() {
+  const intro = document.getElementById("welcome");
+  if (intro) intro.style.display = "none";
 }

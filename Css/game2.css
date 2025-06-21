@@ -73,8 +73,8 @@
 
   #gameBoard {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 0;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 2;
   }
 
   .flip-card {

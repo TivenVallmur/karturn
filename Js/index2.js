@@ -3,10 +3,10 @@ fetch('Assets/data/categories.json')
   .then(response => response.json())
   .then(categories => {
     const cardsContainer = document.querySelector('.cards-container');
-    // console.log(`Cargando vista para la categoría: ${categories}`);
+    // console.log(Cargando vista para la categoría: ${categories});
     // console.log(categories);
     categories.forEach(category => {
-      //console.log(`Cargando vista para la categoría: ${category}`);
+      //console.log(Cargando vista para la categoría: ${category});
       const card = document.createElement('div');
       card.classList.add('card');
 
@@ -17,11 +17,19 @@ fetch('Assets/data/categories.json')
 
       const selectButton = document.createElement('button');
       selectButton.textContent = 'Seleccionar';
+      // selectButton.addEventListener('click', () => {
+      //   //alert(Categoría seleccionada: ${category});
+      //   localStorage.setItem('selectedCategory', category);
+      //   cargarVista()
+      //   //console.log(Cargando vista para la categoría: ${category});
+      // });
+
       selectButton.addEventListener('click', () => {
-        //startGame(category);
-        cargarVista()
-        //console.log(`Cargando vista para la categoría: ${category}`);
+        ocultarIntro(); // si tienes introducción
+        localStorage.setItem('selectedCategory', category);
+        cargarVista('subcategories', { selectedCategory: category });
       });
+
 
       card.appendChild(categoryName);
       card.appendChild(selectButton);
@@ -67,5 +75,5 @@ fetch('Assets/data/categories.json')
 // Función que guarda la categoría seleccionada y redirige
 function startGame(category) {
   localStorage.setItem('selectedCategory', category);
-  window.location.href = 'game.html';
+  window.location.href = 'game2.html';
 }

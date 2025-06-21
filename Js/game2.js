@@ -1,31 +1,42 @@
-inicializarJuego();
+// Este archivo no llama a inicializarJuego() directamente, porque lo hará el script.onload
+// Pero sí expone la función globalmente para que pueda ser llamada tras la carga dinámica.
 
 function inicializarJuego() {
-  const categoria = localStorage.getItem("selectedCategory");
-  const subcategoria = localStorage.getItem("selectedSubcategory");
+console.log("Entre al inicializarJuego");
 
-  if (!categoria || !subcategoria) {
-    console.error("Falta categoría o subcategoría seleccionada");
-    return;
-  }
+  const intervalo = setInterval(() => {
 
-  console.log("Categoría seleccionada:", categoria);
-  console.log("Subcategoría seleccionada:", subcategoria);
+    console.log("Entre al setInterval");
 
-  const rutaJson = categoria !== "Desconocida"
-    ? `Assets/data/${categoria}.json`
-    : "Assets/data/verbos_irregulares.json";
+    const categoria = localStorage.getItem("selectedCategory");
+    const subcategoria = localStorage.getItem("selectedSubcategory");
+    console.log("Categoría seleccionada:", categoria);
+    console.log("Subcategoría seleccionada:", subcategoria);
+    
+    if (categoria && subcategoria) {
+      clearInterval(intervalo); // Detener el ciclo
 
-  iniciarJuegoFiltrado(rutaJson, subcategoria);
+      console.log("Categoría seleccionada:", categoria);
+      console.log("Subcategoría seleccionada:", subcategoria);
+
+      const rutaJson = categoria !== "Desconocida"
+        ? `Assets/data/${categoria}.json`
+        : "Assets/data/verbos_irregulares.json";
+
+      iniciarJuegoFiltrado(rutaJson, subcategoria);
+    } else {
+      console.log("Esperando localStorage...");
+    }
+  }, 100); // Verifica cada 100ms
 }
 
 
-// Estado del juego
+// Variables para el estado del juego
 let primeraCarta = null;
 let segundaCarta = null;
 let bloqueo = false;
 
-// Escuchar cambio de orientación para recargar
+// Recargar el juego al cambiar la orientación del dispositivo
 window.addEventListener("orientationchange", () => {
   const categoria = localStorage.getItem("selectedCategory");
   const subcategoria = localStorage.getItem("selectedSubcategory");
@@ -36,24 +47,24 @@ window.addEventListener("orientationchange", () => {
   iniciarJuegoFiltrado(rutaJson, subcategoria);
 });
 
-// Función principal
+// Cargar y filtrar los datos del JSON
 function iniciarJuegoFiltrado(jsonPath, subcategoria) {
   fetch(jsonPath)
     .then(res => res.json())
     .then(data => {
+      console.log("Subcategoría seleccionada:", subcategoria);
 
-    console.log("Subcategoría seleccionada:", subcategoria);
-
-    const datosFiltrados = data.filter(item =>        
+      const datosFiltrados = data.filter(item =>
         item.subcategoria.trim().toLowerCase() === subcategoria.trim().toLowerCase()
-    );
+      );
 
-    console.log("Cartas filtradas:", datosFiltrados);
+      console.log("Cartas filtradas:", datosFiltrados);
       renderizarCartas(datosFiltrados);
     })
     .catch(err => console.error("Error al cargar o procesar JSON:", err));
 }
 
+// Determinar la cantidad de cartas según el dispositivo
 function obtenerCantidadCartas() {
   const esMovil = /Mobi|Android/i.test(navigator.userAgent);
   const esVertical = window.innerHeight > window.innerWidth;
@@ -61,6 +72,7 @@ function obtenerCantidadCartas() {
   return (esMovil && esVertical) ? 20 : 24;
 }
 
+// Renderizar las cartas en el tablero
 function renderizarCartas(data) {
   const board = document.getElementById("gameBoard");
   if (!board) {
@@ -70,7 +82,7 @@ function renderizarCartas(data) {
 
   board.innerHTML = "";
 
-  const cantidadCartas = obtenerCantidadCartas(); // 20 o 24
+  const cantidadCartas = obtenerCantidadCartas();
   const cantidadPares = cantidadCartas / 2;
 
   const unicos = [];
@@ -85,7 +97,7 @@ function renderizarCartas(data) {
 
   const seleccion = unicos.sort(() => Math.random() - 0.5).slice(0, cantidadPares);
   const cartas = [...seleccion, ...seleccion].sort(() => Math.random() - 0.5);
-console.log("Cartas únicas para jugar:", unicos);
+
   cartas.forEach(animal => {
     const flipCard = document.createElement("div");
     flipCard.className = "flip-card";
@@ -128,11 +140,16 @@ console.log("Cartas únicas para jugar:", unicos);
   });
 }
 
+// Lógica del juego para comparar cartas
 function manejarClickCarta(carta, animal) {
   if (bloqueo || carta.classList.contains("flipped")) return;
 
   carta.classList.add("flipped");
-  responsiveVoice.speak(animal.ingles, "US English Female");
+
+  // Solo si tienes la librería de voz incluida
+  if (window.responsiveVoice) {
+    responsiveVoice.speak(animal.ingles, "US English Female");
+  }
 
   if (!primeraCarta) {
     primeraCarta = { carta, animal };
@@ -160,3 +177,7 @@ function resetCartas() {
   segundaCarta = null;
   bloqueo = false;
 }
+
+
+// 👇 Esta línea permite que inicializarJuego se pueda llamar después de cargar dinámicamente el script
+window.inicializarJuego = inicializarJuego; 

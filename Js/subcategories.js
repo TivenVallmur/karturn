@@ -1,35 +1,29 @@
-// Leer categoría seleccionada del localStorage
-const selectedCategory = localStorage.getItem("selectedCategory") || "animales";
+// Obtener la categoría seleccionada
+const selectedCategory = localStorage.getItem("selectedCategory");
 
-// Cargar datos desde el JSON
+// Cargar las subcategorías desde el JSON
 fetch('Assets/data/subcategories.json')
   .then(response => {
     if (!response.ok) throw new Error("No se pudo cargar el JSON");
     return response.json();
   })
   .then(data => {
-    // Filtrar solo los elementos que coinciden con la categoría seleccionada
     const itemsFiltrados = data.filter(item =>
       item.categoria.toLowerCase() === selectedCategory.toLowerCase()
     );
 
-    // console.log("Categoría seleccionada:", selectedCategory);
-    // console.log("Elementos filtrados:", itemsFiltrados);
-
-    // Agrupar por subcategoría única
     const subcategoriasSet = new Set();
     itemsFiltrados.forEach(item => {
       subcategoriasSet.add(item.subcategoria);
     });
 
-    // Acceder al contenedor de tarjetas
     const cardsContainer = document.querySelector('.cards-container');
     if (!cardsContainer) {
       console.error("No se encontró cards-container en el HTML");
       return;
     }
 
-    // Crear tarjetas para cada subcategoría
+    // Crear una tarjeta para cada subcategoría
     subcategoriasSet.forEach(subcategoria => {
       const card = document.createElement('div');
       card.classList.add('card');
@@ -40,10 +34,12 @@ fetch('Assets/data/subcategories.json')
       const button = document.createElement('button');
       button.textContent = 'Seleccionar';
       button.classList.add('btn-select');
+
       button.addEventListener('click', () => {
+        // Guardar la subcategoría en localStorage
         localStorage.setItem('selectedSubcategory', subcategoria);
-        // window.location.href = 'game2.html';
-        //alert(`Subcategoría seleccionada: ${subcategoria}`);
+
+        // Cargar la vista del juego
         cargarVista();
       });
 
@@ -56,34 +52,48 @@ fetch('Assets/data/subcategories.json')
     console.error("Error procesando las subcategorías:", error);
   });
 
+// Función para cargar la vista del juego (game2)
+function cargarVista() {
+  const nombreVista = 'game2';
 
-  function cargarVista() {
-    let nombreVista = 'game2';
-  // Cargar HTML
   fetch(`${nombreVista}.html`)
     .then(response => {
       if (!response.ok) throw new Error("Vista no encontrada");
       return response.text();
     })
     .then(html => {
+      // Insertar HTML dinámicamente
       document.getElementById("view-section").innerHTML = html;
 
-      // Eliminar CSS anterior (si existe)
+      // Quitar CSS anterior
       const cssExistente = document.getElementById("vista-css");
       if (cssExistente) cssExistente.remove();
 
-      // Insertar nuevo CSS
+      // Eliminar JS anterior
+      const scriptExistente = document.getElementById("vista-js");
+      if (scriptExistente) scriptExistente.remove();
+
+      // Agregar nuevo CSS
       const link = document.createElement("link");
       link.rel = "stylesheet";
       link.href = `Css/${nombreVista.toLowerCase()}.css`;
       link.id = "vista-css";
       document.head.appendChild(link);
 
-      //Cargar el JS correspondiente
+      // Cargar script JS y luego ejecutar inicializarJuego()
       const script = document.createElement("script");
       script.src = `Js/${nombreVista.toLowerCase()}.js`;
       script.id = "vista-js";
-      script.defer = true;
+//script.defer = true;
+      script.onload = () => {
+        console.log("Script game2.js cargado");
+        if (typeof inicializarJuego === 'function') {
+          inicializarJuego();
+        } else {
+          console.error("No se encontró la función inicializarJuego");
+        }
+      };
+
       document.body.appendChild(script);
     })
     .catch(err => {
