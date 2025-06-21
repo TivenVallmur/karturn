@@ -8,19 +8,21 @@
   <link rel="stylesheet" href="Css/layout.css" />
 </head>
 <body>
+  <!-- Fondo oscuro detrás del sidebar -->
+  <div id="sidebar-overlay"></div>
   <div class="container">
 
     <button class="sidebar-toggle" aria-label="Abrir menú lateral" onclick="toggleSidebar()">☰</button>
 
     <!-- Sidebar -->
-    <aside class="sidebar">
+    <aside class="sidebar">      
       <div class="logo text-center py-3">
         <img src="Assets/images/LogoV2.png" alt="Logo de Karturn" class="logo-img" />
       </div>
       <nav class="sidebar-nav">
-        <button>Home</button>
+        <button onclick="irAlInicio()">Home</button>
         <button>You</button>
-        <button>Select category</button>
+        <button onclick="cargarVistaIndex()">Select category</button>
       </nav>
     </aside>
 
@@ -33,7 +35,7 @@
             <button onclick="irAlInicio()">Home</button>
             </span> 
             <span>
-            <button onclick="cargarVista('index2')">Select category</button>
+            <button onclick="cargarVistaIndex()">Select category</button>
           </span>
         </nav>
       </header>

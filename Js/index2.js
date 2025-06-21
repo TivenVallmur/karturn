@@ -27,7 +27,8 @@ fetch('Assets/data/categories.json')
       selectButton.addEventListener('click', () => {
         ocultarIntro(); // si tienes introducción
         localStorage.setItem('selectedCategory', category);
-        cargarVista('subcategories', { selectedCategory: category });
+        //cargarVista('subcategories', { selectedCategory: category });
+        cargarVistaSubCat()
       });
 
 
@@ -37,7 +38,7 @@ fetch('Assets/data/categories.json')
     });
   });
 
-  function cargarVista() {
+  function cargarVistaSubCat() {
     let nombreVista = 'subcategories';
   // Cargar HTML
   fetch(`${nombreVista}.html`)

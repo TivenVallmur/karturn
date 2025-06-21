@@ -1,12 +1,47 @@
 // Mostrar u ocultar menú lateral
+// function toggleSidebar() {
+//   document.querySelector(".sidebar").classList.toggle("show");
+// }
+
+// Mostrar u ocultar menú lateral
 function toggleSidebar() {
-  document.querySelector(".sidebar").classList.toggle("show");
+  const sidebar = document.querySelector(".sidebar");
+  const overlay = document.getElementById("sidebar-overlay");
+  sidebar.classList.toggle("show");
+
+  // Mostrar u ocultar fondo oscuro
+  if (sidebar.classList.contains("show")) {
+    overlay.style.display = "block";
+  } else {
+    overlay.style.display = "none";
+  }
 }
 
-function cargarVista(nombreVista) {
+// Cerrar el sidebar si se hace clic fuera de él
+document.addEventListener("click", function (event) {
+  const sidebar = document.querySelector(".sidebar");
+  const toggleButton = document.querySelector(".sidebar-toggle");
+  const overlay = document.getElementById("sidebar-overlay");
 
-  console.log(`Cargando vista: ${nombreVista}`);
+  if (!sidebar || !toggleButton || !overlay) return;
 
+  const isOpen = sidebar.classList.contains("show");
+
+  // Si el clic fue fuera del sidebar y del botón, y el sidebar está abierto
+  if (
+    isOpen &&
+    !sidebar.contains(event.target) &&
+    !toggleButton.contains(event.target)
+  ) {
+    sidebar.classList.remove("show");
+    overlay.style.display = "none";
+  }
+});
+
+function cargarVistaIndex() {
+  //console.log(`Cargando vista: ${nombreVista}`);
+  toggleSidebar();
+  let nombreVista = 'index2';
   // Cargar HTML
   fetch(`${nombreVista}.html`)
     .then(response => {
@@ -39,6 +74,11 @@ function cargarVista(nombreVista) {
       script.id = "vista-js";
       script.defer = true;
       document.body.appendChild(script);
+
+      // Limpiar selección previa
+      localStorage.clear();
+      localStorage.removeItem("selectedCategory");
+      localStorage.removeItem("selectedSubcategory");
     })
     .catch(err => {
       console.error("Error cargando la vista:", err);
@@ -47,25 +87,12 @@ function cargarVista(nombreVista) {
 }
 
 function irAlInicio() {
-  // Mostrar la introducción
-  const intro = document.getElementById("welcome");
-  if (intro) intro.style.display = "block";
-
-  // Limpiar la vista dinámica
-  const vista = document.getElementById("view-section");
-  if (vista) vista.innerHTML = "";
-
-  // Eliminar CSS y JS cargados dinámicamente
-  const css = document.getElementById("vista-css");
-  if (css) css.remove();
-
-  const js = document.getElementById("vista-js");
-  if (js) js.remove();
-
   // Limpiar selección previa
   localStorage.clear();
   localStorage.removeItem("selectedCategory");
   localStorage.removeItem("selectedSubcategory");
+
+  window.location.reload();
 }
 
 function ocultarIntro() {

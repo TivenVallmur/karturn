@@ -55,6 +55,16 @@ body {
   cursor: pointer;
 }
 
+#sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* semitransparente */
+  z-index: 999; /* asegúrate que esté por encima de todo */
+  display: none;
+}
 
 .logo-img {
   width: 80px;
@@ -101,19 +111,29 @@ body {
 /* Header */
 header {
   background: #ccff99;
-  padding: 10px 20px;
+  padding: 5px;
+  margin: 5px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
 
-/* .top-nav span {
-  margin-right: 20px;
-  font-weight: bold;
-} */
+.header button {
+  background-color: #00cfff;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: auto;
+}
 
-
+.header button:hover {
+  background-color: #00aacc;
+  color: white;
+  transition: background-color 0.3s ease;
+}
 
 /* Responsive */
 @media (max-width: 768px) {

@@ -1,5 +1,12 @@
 // Obtener la categoría seleccionada
-const selectedCategory = localStorage.getItem("selectedCategory");
+//const selectedCategory = localStorage.getItem("selectedCategory");
+
+if (typeof selectedCategory === "undefined") {
+  var selectedCategory = localStorage.getItem("selectedCategory"); // crearla si no existe
+} else {
+  selectedCategory = localStorage.getItem("selectedCategory"); // ya existe, solo actualizar
+}
+
 
 // Cargar las subcategorías desde el JSON
 fetch('Assets/data/subcategories.json')
