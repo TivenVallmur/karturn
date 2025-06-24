@@ -1,4 +1,4 @@
-html, body {
+/* html, body {
   margin: 0;
   font-family: sans-serif;
   overflow-x: hidden;
@@ -8,10 +8,10 @@ html, body {
 
 .sidebar.show {
     transform: translateX(0);
-  }
+  } */
 
 /* Sidebar */
-.sidebar {
+/* .sidebar {
   position: fixed;
   transform: translateX(-100%);
   width: 165px;
@@ -53,10 +53,10 @@ html, body {
 .main {
   margin-left: 200px;
   padding: 20px;
-}
+} */
 
 /* Header */
-header {
+/* header {
   background: #ccff99;
   padding: 10px 20px;
   display: flex;
@@ -69,17 +69,17 @@ header {
   flex: 1;
   overflow-y: auto;
   padding: 20px;
-}
+} */
 
 /* Tablero */
-#gameBoard {
+/* #gameBoard {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 15px;
-}
+} */
 
 /* Cartas */
-.flip-card {
+/* .flip-card {
   width: 120px;
   height: 160px;
   perspective: 1000px;
@@ -131,10 +131,10 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 /* Responsive */
-@media (max-width: 768px) and (orientation: portrait) {
+/* @media (max-width: 768px) and (orientation: portrait) {
   .sidebar {
     transform: translateX(-100%);
     width: 165px;
@@ -176,17 +176,13 @@ header {
 
   .flip-card-front h2,
   .flip-card-front p {
-    font-size: 11px; /* Texto más pequeño */
+    font-size: 11px; 
     margin: 2px 0;
   }
 
 .flip-card-back img {
-  /* width: auto; */
-  /* height: auto; */
   max-width: 100%;
-  object-fit: initial; /* Muestra toda la imagen sin recortarla */
-  /*padding: 5px; /* Opcional: para dar un pequeño margen */
-  /* box-sizing: border-box; */
+  object-fit: initial; 
 }
 
   header {
@@ -195,15 +191,11 @@ header {
     gap: 10px;
     margin-left: 10%;
   }
-}
+} */
 
 /* Estilos para pantallas en modo horizontal */
-@media (orientation: landscape) and (max-width: 780px){  
-  /* body {
-    background-color: lightgreen;
-  } */
-
-  .sidebar {
+/* @media (orientation: landscape) and (max-width: 780px){  
+   .sidebar {
     transform: translateX(-100%);
     width: 165px;
   }
@@ -244,17 +236,13 @@ header {
 
   .flip-card-front h2,
   .flip-card-front p {
-    font-size: 12px; /* Texto más pequeño */
+    font-size: 12px;
     margin: 2px 0;
   }
 
 .flip-card-back img {
-  /* width: auto; */
-  /* height: auto; */
   max-width: 100%;
-  object-fit: initial; /* Muestra toda la imagen sin recortarla */
-  /*padding: 5px; /* Opcional: para dar un pequeño margen */
-  /* box-sizing: border-box; */
+  object-fit: initial; 
 }
 
   header {
@@ -263,4 +251,4 @@ header {
     gap: 10px;
     margin-left: 10%;
   }
-}
+} */

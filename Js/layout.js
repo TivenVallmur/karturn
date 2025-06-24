@@ -1,9 +1,4 @@
 // Mostrar u ocultar menú lateral
-// function toggleSidebar() {
-//   document.querySelector(".sidebar").classList.toggle("show");
-// }
-
-// Mostrar u ocultar menú lateral
 function toggleSidebar() {
   const sidebar = document.querySelector(".sidebar");
   const overlay = document.getElementById("sidebar-overlay");
@@ -96,6 +91,111 @@ function irAlInicio() {
 }
 
 function ocultarIntro() {
-  const intro = document.getElementById("welcome");
+  const intro = document.getElementById("intro-section");
+  const welcome = document.getElementById("welcome");
   if (intro) intro.style.display = "none";
+  if (welcome) welcome.style.display = "none";
 }
+
+function empezarJuego() {
+  const intro = document.getElementById("intro-section");
+  if (intro) intro.style.display = "none";
+
+  cargarVistaIndex(); // va a index2.html (categorías)
+}
+
+// fetch('Assets/data/subcategories.json')
+//   .then(response => {
+//     if (!response.ok) throw new Error("No se pudo cargar el JSON");
+//     return response.json();
+//   })
+//   .then(data => {
+//     console.log("Subcategorías cargadas:");
+
+//     data.forEach(item => {
+//       const categoria = item.categoria || "(sin categoría)";
+//       const subcategoria = item.subcategoria || "(sin subcategoría)";
+//       const ingles = item.ingles || "(sin nombre en inglés)";
+
+//       console.log(`📁 Categoría: ${categoria} | 📂 Subcategoría: ${subcategoria} | 📘 Inglés: ${ingles}`);
+//     });
+//   })
+//   .catch(error => {
+//     console.error("Error procesando las subcategorías:", error);
+//   });
+
+// fetch('Assets/data/subcategories.json')
+//   .then(response => {
+//     if (!response.ok) throw new Error("No se pudo cargar el JSON");
+//     return response.json();
+//   })
+//   .then(async data => {
+//     const conteoPorSubcategoria = {};
+//     const nombresInglesSet = new Set();
+//     const repetidos = new Set();
+//     const sinImagenValida = [];
+//     const erroresImagenes = [];
+
+//     for (const item of data) {
+//       const subcategoria = item.subcategoria || "(sin subcategoría)";
+//       const nombreIngles = item.ingles || "(sin nombre en inglés)";
+//       const imagen = item.imagen;
+
+//       // Conteo por subcategoría
+//       conteoPorSubcategoria[subcategoria] = (conteoPorSubcategoria[subcategoria] || 0) + 1;
+
+//       // Duplicados
+//       if (nombresInglesSet.has(nombreIngles)) {
+//         repetidos.add(nombreIngles);
+//       } else {
+//         nombresInglesSet.add(nombreIngles);
+//       }
+
+//       // Validación de ruta
+//       const tieneRutaValida = imagen && typeof imagen === "string" && imagen.trim().endsWith(".png");
+//       if (!tieneRutaValida) {
+//         sinImagenValida.push(nombreIngles);
+//         continue;
+//       }
+
+//       // Validar existencia real del archivo sin generar errores visibles
+//       try {
+//         const response = await fetch(imagen, { method: 'HEAD' });
+//         if (!response.ok) {
+//           erroresImagenes.push(nombreIngles);
+//         }
+//       } catch {
+//         erroresImagenes.push(nombreIngles);
+//       }
+//     }
+
+//     // Resultados
+//     console.log("📊 Conteo por subcategoría:");
+//     Object.entries(conteoPorSubcategoria).forEach(([sub, count]) => {
+//       console.log(`📂 ${sub}: ${count} elementos`);
+//     });
+
+//     if (repetidos.size > 0) {
+//       console.warn("🔁 Repetidos:");
+//       console.warn([...repetidos]);
+//     } else {
+//       console.log("✅ Sin nombres repetidos");
+//     }
+
+//     if (sinImagenValida.length > 0) {
+//       console.warn("❌ Elementos con ruta inválida de imagen:");
+//       console.warn(sinImagenValida);
+//     } else {
+//       console.log("✅ Todas las rutas tienen formato válido (.png)");
+//     }
+
+//     if (erroresImagenes.length > 0) {
+//       console.warn("🖼️ Elementos cuya imagen no existe (404):");
+//       console.warn(erroresImagenes);
+//     } else {
+//       console.log("✅ Todas las imágenes existen en disco.");
+//     }
+//   })
+//   .catch(error => {
+//     console.error("❗ Error procesando las subcategorías:", error);
+//   });

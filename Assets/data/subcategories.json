@@ -1,444 +1,317 @@
 [
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Dog",
-    "espanol": "Perro",
-    "imagen": "Assets/images/animales/dog.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Cat",
-    "espanol": "Gato",
-    "imagen": "Assets/images/animales/cat.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Horse",
-    "espanol": "Caballo",
-    "imagen": "Assets/images/animales/horse.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Rabbit",
-    "espanol": "Conejo",
-    "imagen": "Assets/images/animales/rabbit.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Cow",
-    "espanol": "Vaca",
-    "imagen": "Assets/images/animales/cow.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Pig",
-    "espanol": "Cerdo",
-    "imagen": "Assets/images/animales/pig.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Sheep",
-    "espanol": "Oveja",
-    "imagen": "Assets/images/animales/sheep.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Goat",
-    "espanol": "Cabra",
-    "imagen": "Assets/images/animales/goat.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Donkey",
-    "espanol": "Burro",
-    "imagen": "Assets/images/animales/donkey.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Hamster",
-    "espanol": "Hámster",
-    "imagen": "Assets/images/animales/hamster.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Guinea Pig",
-    "espanol": "Cobaya",
-    "imagen": "Assets/images/animales/guinea_pig.png"
-  },  
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Camel",
-    "espanol": "Camello",
-    "imagen": "Assets/images/animales/camel.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Mouse",
-    "espanol": "Ratón",
-    "imagen": "Assets/images/animales/mouse.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Rat",
-    "espanol": "Rata",
-    "imagen": "Assets/images/animales/rat.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Llama",
-    "espanol": "Llama",
-    "imagen": "Assets/images/animales/llama.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Alpaca",
-    "espanol": "Alpaca",
-    "imagen": "Assets/images/animales/alpaca.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Yak",
-    "espanol": "Yak",
-    "imagen": "Assets/images/animales/yak.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Mule",
-    "espanol": "Mula",
-    "imagen": "Assets/images/animales/mule.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Ox",
-    "espanol": "Buey",
-    "imagen": "Assets/images/animales/ox.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Domesticos",
-    "ingles": "Bull",
-    "espanol": "Toro",
-    "imagen": "Assets/images/animales/bull.png"
-  },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Dog","espanol": "Perro","imagen": "Assets/images/animales/dog.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Cat","espanol": "Gato","imagen": "Assets/images/animales/cat.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Horse","espanol": "Caballo","imagen": "Assets/images/animales/horse.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Rabbit","espanol": "Conejo","imagen": "Assets/images/animales/rabbit.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Cow","espanol": "Vaca","imagen": "Assets/images/animales/cow.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Pig","espanol": "Cerdo","imagen": "Assets/images/animales/pig.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Sheep","espanol": "Oveja","imagen": "Assets/images/animales/sheep.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Goat","espanol": "Cabra","imagen": "Assets/images/animales/goat.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Donkey","espanol": "Burro","imagen": "Assets/images/animales/donkey.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Hamster","espanol": "Hámster","imagen": "Assets/images/animales/hamster.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Guinea Pig","espanol": "Cobaya","imagen": "Assets/images/animales/guinea_pig.png" },  
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Camel","espanol": "Camello","imagen": "Assets/images/animales/camel.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Mouse","espanol": "Ratón","imagen": "Assets/images/animales/mouse.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Rat","espanol": "Rata","imagen": "Assets/images/animales/rat.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Llama","espanol": "Llama","imagen": "Assets/images/animales/llama.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Alpaca","espanol": "Alpaca","imagen": "Assets/images/animales/alpaca.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Yak","espanol": "Yak","imagen": "Assets/images/animales/yak.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Mule","espanol": "Mula","imagen": "Assets/images/animales/mule.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Ox","espanol": "Buey","imagen": "Assets/images/animales/ox.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Bull","espanol": "Toro","imagen": "Assets/images/animales/bull.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Calf","espanol": "Ternero","imagen": "Assets/images/animales/calf.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Lamb","espanol": "Cordero","imagen": "Assets/images/animales/lamb.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Pony","espanol": "Poni","imagen": "Assets/images/animales/pony.png" },
+  { "categoria": "animales","subcategoria": "Domesticos","ingles": "Buffalo","espanol": "Búfalo","imagen": "Assets/images/animales/buffalo.png" },
 
 
-  {
-    "categoria": "animales",
-    "subcategoria": "Aves",
-    "ingles": "Penguin",
-    "espanol": "Pingüino",
-    "imagen": "Assets/images/animales/penguin.png"
-  },
-
-  {
-    "categoria": "animales",
-    "subcategoria": "Aves",
-    "ingles": "Flamingo",
-    "espanol": "Flamenco",
-    "imagen": "Assets/images/animales/flamingo.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Aves",
-    "ingles": "Eagle",
-    "espanol": "Águila",
-    "imagen": "Assets/images/animales/eagle.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Aves",
-    "ingles": "Parrot",
-    "espanol": "Loro",
-    "imagen": "Assets/images/animales/parrot.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Aves",
-    "ingles": "Owl",
-    "espanol": "Búho",
-    "imagen": "Assets/images/animales/owl.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Aves",
-    "ingles": "Duck",
-    "espanol": "Pato",
-    "imagen": "Assets/images/animales/duck.png"
-  },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Penguin","espanol": "Pingüino","imagen": "Assets/images/animales/penguin.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Flamingo","espanol": "Flamenco","imagen": "Assets/images/animales/flamingo.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Eagle","espanol": "Águila","imagen": "Assets/images/animales/eagle.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Parrot","espanol": "Loro","imagen": "Assets/images/animales/parrot.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Owl","espanol": "Búho","imagen": "Assets/images/animales/owl.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Duck","espanol": "Pato","imagen": "Assets/images/animales/duck.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Chicken","espanol": "Gallina","imagen": "Assets/images/animales/chicken.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Rooster","espanol": "Gallo","imagen": "Assets/images/animales/rooster.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Swan","espanol": "Cisne","imagen": "Assets/images/animales/swan.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Peacock","espanol": "Pavo real","imagen": "Assets/images/animales/peacock.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Turkey","espanol": "Pavo","imagen": "Assets/images/animales/turkey.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Goose","espanol": "Ganso","imagen": "Assets/images/animales/goose.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Canary","espanol": "Canario","imagen": "Assets/images/animales/canary.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Sparrow","espanol": "Gorrión","imagen": "Assets/images/animales/sparrow.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Crow","espanol": "Cuervo","imagen": "Assets/images/animales/crow.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Hummingbird","espanol": "Colibrí","imagen": "Assets/images/animales/hummingbird.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Seagull","espanol": "Gaviota","imagen": "Assets/images/animales/seagull.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Woodpecker","espanol": "Pájaro carpintero","imagen": "Assets/images/animales/woodpecker.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Stork","espanol": "Cigüeña","imagen": "Assets/images/animales/stork.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Pigeon","espanol": "Paloma","imagen": "Assets/images/animales/pigeon.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Toucan","espanol": "Tucán","imagen": "Assets/images/animales/toucan.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Hawk","espanol": "Halcón","imagen": "Assets/images/animales/hawk.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Robin","espanol": "Petirrojo","imagen": "Assets/images/animales/robin.png" },
+  {"categoria": "animales","subcategoria": "Aves","ingles": "Pelican","espanol": "Pelícano","imagen": "Assets/images/animales/pelican.png" },
 
 
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Whale","espanol": "Ballena","imagen": "Assets/images/animales/whale.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Shark","espanol": "Tiburón","imagen": "Assets/images/animales/shark.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Dolphin","espanol": "Delfín","imagen": "Assets/images/animales/dolphin.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Seal","espanol": "Foca","imagen": "Assets/images/animales/seal.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Octopus","espanol": "Pulpo","imagen": "Assets/images/animales/octopus.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Crab","espanol": "Cangrejo","imagen": "Assets/images/animales/crab.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Starfish","espanol": "Estrella de mar","imagen": "Assets/images/animales/starfish.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Jellyfish","espanol": "Medusa","imagen": "Assets/images/animales/jellyfish.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Lobster","espanol": "Langosta","imagen": "Assets/images/animales/lobster.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Sea Horse","espanol": "Caballito de mar","imagen": "Assets/images/animales/sea_horse.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Clownfish","espanol": "Pez payaso","imagen": "Assets/images/animales/clownfish.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Eel","espanol": "Anguila","imagen": "Assets/images/animales/eel.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Ray","espanol": "Mantarraya","imagen": "Assets/images/animales/ray.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Squid","espanol": "Calamar","imagen": "Assets/images/animales/squid.png" },  
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Swordfish","espanol": "Pez espada","imagen": "Assets/images/animales/swordfish.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Anglerfish","espanol": "Pez abisal","imagen": "Assets/images/animales/anglerfish.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Pufferfish","espanol": "Pez globo","imagen": "Assets/images/animales/pufferfish.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Sea Urchin","espanol": "Erizo de mar","imagen": "Assets/images/animales/sea_urchin.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Blue Tang","espanol": "Cirujano azul","imagen": "Assets/images/animales/blue_tang.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Barracuda","espanol": "Barracuda","imagen": "Assets/images/animales/barracuda.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Krill","espanol": "Krill","imagen": "Assets/images/animales/krill.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Anemone","espanol": "Anémona","imagen": "Assets/images/animales/anemone.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Coral","espanol": "Coral","imagen": "Assets/images/animales/coral.png" },
+  { "categoria": "animales","subcategoria": "Marinos","ingles": "Flying Fish","espanol": "Pez volador","imagen": "Assets/images/animales/flying_fish.png" },
 
 
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Crocodile","espanol": "Cocodrilo","imagen": "Assets/images/animales/crocodile.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Turtle","espanol": "Tortuga","imagen": "Assets/images/animales/turtle.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Lizard","espanol": "Lagarto","imagen": "Assets/images/animales/lizard.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Snake","espanol": "Serpiente","imagen": "Assets/images/animales/snake.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Chameleon","espanol": "Camaleón","imagen": "Assets/images/animales/chameleon.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Alligator","espanol": "Caimán","imagen": "Assets/images/animales/alligator.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Iguana","espanol": "Iguana","imagen": "Assets/images/animales/iguana.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Komodo Dragon","espanol": "Dragón de Komodo","imagen": "Assets/images/animales/komodo_dragon.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Gecko","espanol": "Gecko","imagen": "Assets/images/animales/gecko.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Anole","espanol": "Anolis","imagen": "Assets/images/animales/anole.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Skink","espanol": "Escinco","imagen": "Assets/images/animales/skink.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Boa","espanol": "Boa","imagen": "Assets/images/animales/boa.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Python","espanol": "Pitón","imagen": "Assets/images/animales/python.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Viper","espanol": "Víbora","imagen": "Assets/images/animales/viper.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Monitor Lizard","espanol": "Varano","imagen": "Assets/images/animales/monitor_lizard.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Tortoise","espanol": "Tortuga terrestre","imagen": "Assets/images/animales/tortoise.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Gila Monster","espanol": "Monstruo de Gila","imagen": "Assets/images/animales/gila_monster.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Basilisk","espanol": "Basilisco","imagen": "Assets/images/animales/basilisk.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Glass Lizard","espanol": "Lagarto serpiente","imagen": "Assets/images/animales/glass_lizard.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Sidewinder","espanol": "Serpiente de cascabel cornuda","imagen": "Assets/images/animales/sidewinder.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Frilled Lizard","espanol": "Lagarto con volantes","imagen": "Assets/images/animales/frilled_lizard.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Rattlesnake","espanol": "Serpiente de cascabel","imagen": "Assets/images/animales/rattlesnake.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Green Anaconda","espanol": "Anaconda verde","imagen": "Assets/images/animales/green_anaconda.png" },
+  { "categoria": "animales","subcategoria": "Reptiles","ingles": "Tegu","espanol": "Tegú","imagen": "Assets/images/animales/tegu.png" },
+ 
 
-  {
-    "categoria": "animales",
-    "subcategoria": "Marinos",
-    "ingles": "Whale",
-    "espanol": "Ballena",
-    "imagen": "Assets/images/animales/whale.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Marinos",
-    "ingles": "Shark",
-    "espanol": "Tiburón",
-    "imagen": "Assets/images/animales/shark.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Marinos",
-    "ingles": "Dolphin",
-    "espanol": "Delfín",
-    "imagen": "Assets/images/animales/dolphin.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Marinos",
-    "ingles": "Seal",
-    "espanol": "Foca",
-    "imagen": "Assets/images/animales/seal.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Marinos",
-    "ingles": "Octopus",
-    "espanol": "Pulpo",
-    "imagen": "Assets/images/animales/octopus.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Marinos",
-    "ingles": "Crab",
-    "espanol": "Cangrejo",
-    "imagen": "Assets/images/animales/crab.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Marinos",
-    "ingles": "Starfish",
-    "espanol": "Estrella de mar",
-    "imagen": "Assets/images/animales/starfish.png"
-  },
-
-
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Butterfly","espanol": "Mariposa","imagen": "Assets/images/animales/butterfly.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Bee","espanol": "Abeja","imagen": "Assets/images/animales/bee.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Ant","espanol": "Hormiga","imagen": "Assets/images/animales/ant.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Ladybug","espanol": "Mariquita","imagen": "Assets/images/animales/ladybug.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Grasshopper","espanol": "Saltamontes","imagen": "Assets/images/animales/grasshopper.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Dragonfly","espanol": "Libélula","imagen": "Assets/images/animales/dragonfly.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Mosquito","espanol": "Mosquito","imagen": "Assets/images/animales/mosquito.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Fly","espanol": "Mosca","imagen": "Assets/images/animales/fly.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Beetle","espanol": "Escarabajo","imagen": "Assets/images/animales/beetle.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Moth","espanol": "Polilla","imagen": "Assets/images/animales/moth.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Wasp","espanol": "Avispa","imagen": "Assets/images/animales/wasp.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Caterpillar","espanol": "Oruga","imagen": "Assets/images/animales/caterpillar.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Cricket","espanol": "Grillo","imagen": "Assets/images/animales/cricket.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Termite","espanol": "Termita","imagen": "Assets/images/animales/termite.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Cockroach","espanol": "Cucaracha","imagen": "Assets/images/animales/cockroach.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Stink Bug","espanol": "Chinche apestosa","imagen": "Assets/images/animales/stink_bug.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Firefly","espanol": "Luciérnaga","imagen": "Assets/images/animales/firefly.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Praying Mantis","espanol": "Mantis religiosa","imagen": "Assets/images/animales/praying_mantis.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Weevil","espanol": "Gorgojo","imagen": "Assets/images/animales/weevil.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Gnats","espanol": "Mosquitos pequeños","imagen": "Assets/images/animales/gnats.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Flea","espanol": "Pulga","imagen": "Assets/images/animales/flea.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Tick","espanol": "Garrapata","imagen": "Assets/images/animales/tick.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Leafhopper","espanol": "Cigarrilla","imagen": "Assets/images/animales/leafhopper.png" },
+  { "categoria": "animales","subcategoria": "Insectos","ingles": "Rhinoceros beetle","espanol": "Escarabajo rinoceronte","imagen": "Assets/images/animales/rhinoceros_beetle.png" },
 
 
-  {
-    "categoria": "animales",
-    "subcategoria": "Reptiles",
-    "ingles": "Crocodile",
-    "espanol": "Cocodrilo",
-    "imagen": "Assets/images/animales/crocodile.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Reptiles",
-    "ingles": "Turtle",
-    "espanol": "Tortuga",
-    "imagen": "Assets/images/animales/turtle.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Reptiles",
-    "ingles": "Lizard",
-    "espanol": "Lagarto",
-    "imagen": "Assets/images/animales/lizard.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Reptiles",
-    "ingles": "Snake",
-    "espanol": "Serpiente",
-    "imagen": "Assets/images/animales/snake.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Reptiles",
-    "ingles": "Chameleon",
-    "espanol": "Camaleón",
-    "imagen": "Assets/images/animales/chameleon.png"
-  },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Squirrel","espanol": "Ardilla","imagen": "Assets/images/animales/squirrel.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Hedgehog","espanol": "Erizo","imagen": "Assets/images/animales/hedgehog.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Raccoon","espanol": "Mapache","imagen": "Assets/images/animales/raccoon.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Koala","espanol": "Koala","imagen": "Assets/images/animales/koala.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Elephant","espanol": "Elefante","imagen": "Assets/images/animales/elephant.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Giraffe","espanol": "Jirafa","imagen": "Assets/images/animales/giraffe.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Lion","espanol": "León","imagen": "Assets/images/animales/lion.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Tiger","espanol": "Tigre","imagen": "Assets/images/animales/tiger.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Zebra","espanol": "Cebra","imagen": "Assets/images/animales/zebra.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Bear","espanol": "Oso","imagen": "Assets/images/animales/bear.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Fox","espanol": "Zorro","imagen": "Assets/images/animales/fox.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Wolf","espanol": "Lobo","imagen": "Assets/images/animales/wolf.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Hyena","espanol": "Hiena","imagen": "Assets/images/animales/hyena.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Ferret","espanol": "Hurón","imagen": "Assets/images/animales/ferret.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Frog","espanol": "Rana","imagen": "Assets/images/animales/frog.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Kangaroo","espanol": "Canguro","imagen": "Assets/images/animales/kangaroo.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Monkey","espanol": "Mono","imagen": "Assets/images/animales/monkey.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Panda","espanol": "Panda","imagen": "Assets/images/animales/panda.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Panther","espanol": "Pantera","imagen": "Assets/images/animales/panther.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Leopard","espanol": "Leopardo","imagen": "Assets/images/animales/leopard.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Meerkat","espanol": "Suricata","imagen": "Assets/images/animales/meerkat.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Tapir","espanol": "Tapir","imagen": "Assets/images/animales/tapir.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Ocelot","espanol": "Ocelote","imagen": "Assets/images/animales/ocelot.png" },
+  { "categoria": "animales","subcategoria": "Silvestres","ingles": "Chimpanzee","espanol": "Chimpancé","imagen": "Assets/images/animales/chimpanzee.png" },
 
 
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Break","espanol": "Romper","imagen": "Assets/images/verbos_irregulares/break.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Choose","espanol": "Elegir","imagen": "Assets/images/verbos_irregulares/choose.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Drink","espanol": "Beber","imagen": "Assets/images/verbos_irregulares/drink.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Drive","espanol": "Conducir","imagen": "Assets/images/verbos_irregulares/drive.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Eat","espanol": "Comer","imagen": "Assets/images/verbos_irregulares/eat.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Fall","espanol": "Caer","imagen": "Assets/images/verbos_irregulares/fall.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Fly","espanol": "Volar","imagen": "Assets/images/verbos_irregulares/fly.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Forget","espanol": "Olvidar","imagen": "Assets/images/verbos_irregulares/forget.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Know","espanol": "Saber","imagen": "Assets/images/verbos_irregulares/know.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Ride","espanol": "Montar","imagen": "Assets/images/verbos_irregulares/ride.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Ring","espanol": "Llamar (por teléfono)","imagen": "Assets/images/verbos_irregulares/ring.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "See","espanol": "Ver","imagen": "Assets/images/verbos_irregulares/see.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Speak","espanol": "Hablar","imagen": "Assets/images/verbos_irregulares/speak.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Swim","espanol": "Nadar","imagen": "Assets/images/verbos_irregulares/swim.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Buy","espanol": "Comprar","imagen": "Assets/images/verbos_irregulares/buy.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Take","espanol": "Tomar","imagen": "Assets/images/verbos_irregulares/take.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Teach","espanol": "Enseñar","imagen": "Assets/images/verbos_irregulares/teach.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Throw","espanol": "Lanzar","imagen": "Assets/images/verbos_irregulares/throw.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Understand","espanol": "Entender","imagen": "Assets/images/verbos_irregulares/understand.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Wake","espanol": "Despertar","imagen": "Assets/images/verbos_irregulares/wake.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Wear","espanol": "Usar (ropa)","imagen": "Assets/images/verbos_irregulares/wear.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Win","espanol": "Ganar","imagen": "Assets/images/verbos_irregulares/win.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Write","espanol": "Escribir","imagen": "Assets/images/verbos_irregulares/write.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Begin","espanol": "Comenzar","imagen": "Assets/images/verbos_irregulares/begin.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Go","espanol": "Ir","imagen": "Assets/images/verbos_irregulares/go.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Give","espanol": "Dar","imagen": "Assets/images/verbos_irregulares/give.png" },
+  { "categoria": "verbos","subcategoria": "irregulares","ingles": "Sing","espanol": "Cantar","imagen": "Assets/images/verbos_irregulares/sing.png" },
+  
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Accept","espanol": "Aceptar","imagen": "Assets/images/verbos_regulares/accept.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Add","espanol": "Agregar","imagen": "Assets/images/verbos_regulares/add.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Allow","espanol": "Permitir","imagen": "Assets/images/verbos_regulares/allow.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Answer","espanol": "Responder","imagen": "Assets/images/verbos_regulares/answer.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Bake","espanol": "Hornear","imagen": "Assets/images/verbos_regulares/bake.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Brush","espanol": "Cepillar","imagen": "Assets/images/verbos_regulares/brush.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Call","espanol": "Llamar","imagen": "Assets/images/verbos_regulares/call.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Clean","espanol": "Limpiar","imagen": "Assets/images/verbos_regulares/clean.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Climb","espanol": "Escalar","imagen": "Assets/images/verbos_regulares/climb.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Close","espanol": "Cerrar","imagen": "Assets/images/verbos_regulares/close.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Compare","espanol": "Comparar","imagen": "Assets/images/verbos_regulares/compare.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Cook","espanol": "Cocinar","imagen": "Assets/images/verbos_regulares/cook.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Create","espanol": "Crear","imagen": "Assets/images/verbos_regulares/create.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Dance","espanol": "Bailar","imagen": "Assets/images/verbos_regulares/dance.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Deliver","espanol": "Entregar","imagen": "Assets/images/verbos_regulares/deliver.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Enjoy","espanol": "Disfrutar","imagen": "Assets/images/verbos_regulares/enjoy.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Fix","espanol": "Arreglar","imagen": "Assets/images/verbos_regulares/fix.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Help","espanol": "Ayudar","imagen": "Assets/images/verbos_regulares/help.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Hug","espanol": "Abrazar","imagen": "Assets/images/verbos_regulares/hug.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Improve","espanol": "Mejorar","imagen": "Assets/images/verbos_regulares/improve.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Invite","espanol": "Invitar","imagen": "Assets/images/verbos_regulares/invite.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Jump","espanol": "Saltar","imagen": "Assets/images/verbos_regulares/jump.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Laugh","espanol": "Reír","imagen": "Assets/images/verbos_regulares/laugh.png" },
+  { "categoria": "verbos","subcategoria": "regulares","ingles": "Listen","espanol": "Escuchar","imagen": "Assets/images/verbos_regulares/listen.png" },
+
+    
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Doctor", "espanol": "Médico", "imagen": "Assets/images/profesiones/doctor.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Nurse", "espanol": "Enfermero", "imagen": "Assets/images/profesiones/nurse.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Dentist", "espanol": "Dentista", "imagen": "Assets/images/profesiones/dentist.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Surgeon", "espanol": "Cirujano", "imagen": "Assets/images/profesiones/surgeon.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Therapist", "espanol": "Terapeuta", "imagen": "Assets/images/profesiones/therapist.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Pediatrician", "espanol": "Pediatra", "imagen": "Assets/images/profesiones/pediatrician.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Psychiatrist", "espanol": "Psiquiatra", "imagen": "Assets/images/profesiones/psychiatrist.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Radiologist", "espanol": "Radiólogo", "imagen": "Assets/images/profesiones/radiologist.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Pharmacist", "espanol": "Farmacéutico", "imagen": "Assets/images/profesiones/pharmacist.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Veterinarian", "espanol": "Veterinario", "imagen": "Assets/images/profesiones/veterinarian.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Paramedic", "espanol": "Paramédico", "imagen": "Assets/images/profesiones/paramedic.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Midwife", "espanol": "Partera", "imagen": "Assets/images/profesiones/midwife.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Optometrist", "espanol": "Optometrista", "imagen": "Assets/images/profesiones/optometrist.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Physiotherapist", "espanol": "Fisioterapeuta", "imagen": "Assets/images/profesiones/physiotherapist.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Occupational Therapist", "espanol": "Terapeuta ocupacional", "imagen": "Assets/images/profesiones/occupational_therapist.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Audiologist", "espanol": "Audiólogo", "imagen": "Assets/images/profesiones/audiologist.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Dietitian", "espanol": "Dietista", "imagen": "Assets/images/profesiones/dietitian.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Chiropractor", "espanol": "Quiropráctico", "imagen": "Assets/images/profesiones/chiropractor.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Speech Therapist", "espanol": "Logopeda", "imagen": "Assets/images/profesiones/speech_therapist.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Occupational Health Specialist", "espanol": "Especialista en salud ocupacional", "imagen": "Assets/images/profesiones/occupational_health_specialist.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Home Health Aide", "espanol": "Auxiliar de salud domiciliaria", "imagen": "Assets/images/profesiones/home_health_aide.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Clinical Laboratory Technician", "espanol": "Técnico de laboratorio clínico", "imagen": "Assets/images/profesiones/clinical_lab_technician.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "MRI Technician", "espanol": "Técnico de resonancia magnética", "imagen": "Assets/images/profesiones/mri_technician.png" },
+  { "categoria": "profesiones", "subcategoria": "Salud", "ingles": "Sterile Processing Technician", "espanol": "Técnico en esterilización", "imagen": "Assets/images/profesiones/sterile_processing_technician.png" },
 
 
-  {
-    "categoria": "animales",
-    "subcategoria": "Insectos",
-    "ingles": "Butterfly",
-    "espanol": "Mariposa",
-    "imagen": "Assets/images/animales/butterfly.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Insectos",
-    "ingles": "Bee",
-    "espanol": "Abeja",
-    "imagen": "Assets/images/animales/bee.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Insectos",
-    "ingles": "Ant",
-    "espanol": "Hormiga",
-    "imagen": "Assets/images/animales/ant.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Insectos",
-    "ingles": "Ladybug",
-    "espanol": "Mariquita",
-    "imagen": "Assets/images/animales/ladybug.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Insectos",
-    "ingles": "Grasshopper",
-    "espanol": "Saltamontes",
-    "imagen": "Assets/images/animales/grasshopper.png"
-  },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Software Developer", "espanol": "Desarrollador de software", "imagen": "Assets/images/profesiones/software_developer.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Data Analyst", "espanol": "Analista de datos", "imagen": "Assets/images/profesiones/data_analyst.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Web Designer", "espanol": "Diseñador web", "imagen": "Assets/images/profesiones/web_designer.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "IT Technician", "espanol": "Técnico informático", "imagen": "Assets/images/profesiones/it_technician.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Network Engineer", "espanol": "Ingeniero de redes", "imagen": "Assets/images/profesiones/network_engineer.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Cybersecurity Specialist", "espanol": "Especialista en ciberseguridad", "imagen": "Assets/images/profesiones/cybersecurity_specialist.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Database Administrator", "espanol": "Administrador de bases de datos", "imagen": "Assets/images/profesiones/database_administrator.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Cloud Architect", "espanol": "Arquitecto cloud", "imagen": "Assets/images/profesiones/cloud_architect.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "DevOps Engineer", "espanol": "Ingeniero DevOps", "imagen": "Assets/images/profesiones/devops_engineer.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "AI Engineer", "espanol": "Ingeniero de IA", "imagen": "Assets/images/profesiones/ai_engineer.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "UX/UI Designer", "espanol": "Diseñador UX/UI", "imagen": "Assets/images/profesiones/ux_ui_designer.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "QA Tester", "espanol": "Tester de QA", "imagen": "Assets/images/profesiones/qa_tester.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Mobile App Developer", "espanol": "Desarrollador de apps móviles", "imagen": "Assets/images/profesiones/mobile_app_developer.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Systems Analyst", "espanol": "Analista de sistemas", "imagen": "Assets/images/profesiones/systems_analyst.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Computer Scientist", "espanol": "Científico computacional", "imagen": "Assets/images/profesiones/computer_scientist.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "IT Project Manager", "espanol": "Gerente de proyectos TI", "imagen": "Assets/images/profesiones/it_project_manager.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Information Security Analyst", "espanol": "Analista de seguridad informática", "imagen": "Assets/images/profesiones/information_security_analyst.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Full Stack Developer", "espanol": "Desarrollador full stack", "imagen": "Assets/images/profesiones/full_stack_developer.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Front End Developer", "espanol": "Desarrollador front-end", "imagen": "Assets/images/profesiones/front_end_developer.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Back End Developer", "espanol": "Desarrollador back-end", "imagen": "Assets/images/profesiones/back_end_developer.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Database Developer", "espanol": "Desarrollador de bases de datos", "imagen": "Assets/images/profesiones/database_developer.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Network Administrator", "espanol": "Administrador de redes", "imagen": "Assets/images/profesiones/network_administrator.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Help Desk Support", "espanol": "Soporte técnico", "imagen": "Assets/images/profesiones/help_desk_support.png" },
+  { "categoria": "profesiones", "subcategoria": "Tecnología", "ingles": "Computer Support Specialist", "espanol": "Especialista en soporte informático", "imagen": "Assets/images/profesiones/computer_support_specialist.png" },
 
 
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Sofa", "espanol": "Sofá", "imagen": "Assets/images/hogar/sofa.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Armchair", "espanol": "Sillón", "imagen": "Assets/images/hogar/armchair.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Coffee Table", "espanol": "Mesa de centro", "imagen": "Assets/images/hogar/coffee_table.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "TV", "espanol": "Televisor", "imagen": "Assets/images/hogar/tv.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Remote Control", "espanol": "Control remoto", "imagen": "Assets/images/hogar/remote_control.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Lamp", "espanol": "Lámpara", "imagen": "Assets/images/hogar/lamp.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Curtains", "espanol": "Cortinas", "imagen": "Assets/images/hogar/curtains.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Rug", "espanol": "Alfombra", "imagen": "Assets/images/hogar/rug.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Bookshelf", "espanol": "Librero", "imagen": "Assets/images/hogar/bookshelf.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Painting", "espanol": "Cuadro", "imagen": "Assets/images/hogar/painting.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Plant", "espanol": "Planta", "imagen": "Assets/images/hogar/plant.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Clock", "espanol": "Reloj", "imagen": "Assets/images/hogar/clock.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Fireplace", "espanol": "Chimenea", "imagen": "Assets/images/hogar/fireplace.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Ceiling Fan", "espanol": "Ventilador de techo", "imagen": "Assets/images/hogar/ceiling_fan.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Throw Pillow", "espanol": "Cojín", "imagen": "Assets/images/hogar/throw_pillow.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Speaker", "espanol": "Parlante", "imagen": "Assets/images/hogar/speaker.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "DVD Player", "espanol": "Reproductor de DVD", "imagen": "Assets/images/hogar/dvd_player.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Shelf", "espanol": "Estante", "imagen": "Assets/images/hogar/shelf.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Wall Art", "espanol": "Arte mural", "imagen": "Assets/images/hogar/wall_art.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Magazine", "espanol": "Revista", "imagen": "Assets/images/hogar/magazine.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Game Console", "espanol": "Consola de videojuegos", "imagen": "Assets/images/hogar/game_console.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Blanket", "espanol": "Cobija", "imagen": "Assets/images/hogar/blanket.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Ottoman", "espanol": "Reposapiés", "imagen": "Assets/images/hogar/ottoman.png" },
+  { "categoria": "hogar", "subcategoria": "Living_Room", "ingles": "Candle", "espanol": "Vela", "imagen": "Assets/images/hogar/candle.png" },
 
 
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Squirrel",
-    "espanol": "Ardilla",
-    "imagen": "Assets/images/animales/squirrel.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Hedgehog",
-    "espanol": "Erizo",
-    "imagen": "Assets/images/animales/hedgehog.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Raccoon",
-    "espanol": "Mapache",
-    "imagen": "Assets/images/animales/raccoon.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Koala",
-    "espanol": "Koala",
-    "imagen": "Assets/images/animales/koala.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Elephant",
-    "espanol": "Elefante",
-    "imagen": "Assets/images/animales/elephant.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Giraffe",
-    "espanol": "Jirafa",
-    "imagen": "Assets/images/animales/giraffe.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Lion",
-    "espanol": "León",
-    "imagen": "Assets/images/animales/lion.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Tiger",
-    "espanol": "Tigre",
-    "imagen": "Assets/images/animales/tiger.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Zebra",
-    "espanol": "Cebra",
-    "imagen": "Assets/images/animales/zebra.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Bear",
-    "espanol": "Oso",
-    "imagen": "Assets/images/animales/bear.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Fox",
-    "espanol": "Zorro",
-    "imagen": "Assets/images/animales/fox.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Wolf",
-    "espanol": "Lobo",
-    "imagen": "Assets/images/animales/wolf.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Hyena",
-    "espanol": "Hiena",
-    "imagen": "Assets/images/animales/hyena.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Ferret",
-    "espanol": "Hurón",
-    "imagen": "Assets/images/animales/ferret.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Frog",
-    "espanol": "Rana",
-    "imagen": "Assets/images/animales/frog.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Kangaroo",
-    "espanol": "Canguro",
-    "imagen": "Assets/images/animales/kangaroo.png"
-  },
-  {
-    "categoria": "animales",
-    "subcategoria": "Silvestres",
-    "ingles": "Monkey",
-    "espanol": "Mono",
-    "imagen": "Assets/images/animales/monkey.png"
-  }
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Dining Table", "espanol": "Mesa de comedor", "imagen": "Assets/images/hogar/dining_table.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Chair", "espanol": "Silla", "imagen": "Assets/images/hogar/chair.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Napkin", "espanol": "Servilleta", "imagen": "Assets/images/hogar/napkin.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Plate", "espanol": "Plato", "imagen": "Assets/images/hogar/plate.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Fork", "espanol": "Tenedor", "imagen": "Assets/images/hogar/fork.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Knife", "espanol": "Cuchillo", "imagen": "Assets/images/hogar/knife.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Spoon", "espanol": "Cuchara", "imagen": "Assets/images/hogar/spoon.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Glass", "espanol": "Vaso", "imagen": "Assets/images/hogar/glass.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Cup", "espanol": "Taza", "imagen": "Assets/images/hogar/cup.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Tablecloth", "espanol": "Mantel", "imagen": "Assets/images/hogar/tablecloth.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Salt Shaker", "espanol": "Salero", "imagen": "Assets/images/hogar/salt_shaker.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Pepper Shaker", "espanol": "Pimentero", "imagen": "Assets/images/hogar/pepper_shaker.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Chandelier", "espanol": "Lámpara de araña", "imagen": "Assets/images/hogar/chandelier.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Buffet", "espanol": "Aparador", "imagen": "Assets/images/hogar/buffet.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Pitcher", "espanol": "Jarra", "imagen": "Assets/images/hogar/pitcher.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Serving Tray", "espanol": "Bandeja", "imagen": "Assets/images/hogar/serving_tray.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Centerpiece", "espanol": "Centro de mesa", "imagen": "Assets/images/hogar/centerpiece.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Candlestick", "espanol": "Candelabro", "imagen": "Assets/images/hogar/candlestick.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Wine Glass", "espanol": "Copa de vino", "imagen": "Assets/images/hogar/wine_glass.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Placemat", "espanol": "Individual", "imagen": "Assets/images/hogar/placemat.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Serving Spoon", "espanol": "Cuchara para servir", "imagen": "Assets/images/hogar/serving_spoon.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Bowl", "espanol": "Tazón", "imagen": "Assets/images/hogar/bowl.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Wine Bottle", "espanol": "Botella de vino", "imagen": "Assets/images/hogar/wine_bottle.png" },
+  { "categoria": "hogar", "subcategoria": "Dining_Room", "ingles": "Chair Cushion", "espanol": "Cojín de silla", "imagen": "Assets/images/hogar/chair_cushion.png" }
+
 ]
 
 

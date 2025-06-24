@@ -2,22 +2,12 @@
 // Pero sí expone la función globalmente para que pueda ser llamada tras la carga dinámica.
 
 function inicializarJuego() {
-console.log("Entre al inicializarJuego");
-
   const intervalo = setInterval(() => {
-
-    console.log("Entre al setInterval");
-
     const categoria = localStorage.getItem("selectedCategory");
     const subcategoria = localStorage.getItem("selectedSubcategory");
-    console.log("Categoría seleccionada:", categoria);
-    console.log("Subcategoría seleccionada:", subcategoria);
-    
+        
     if (categoria && subcategoria) {
       clearInterval(intervalo); // Detener el ciclo
-
-      console.log("Categoría seleccionada:", categoria);
-      console.log("Subcategoría seleccionada:", subcategoria);
 
       const rutaJson = categoria !== "Desconocida"
         ? `Assets/data/${categoria}.json`
@@ -27,6 +17,10 @@ console.log("Entre al inicializarJuego");
     } else {
       console.log("Esperando localStorage...");
     }
+
+    reiniciarTemporizador();
+    iniciarTemporizador();
+
   }, 100); // Verifica cada 100ms
 }
 
@@ -35,6 +29,22 @@ console.log("Entre al inicializarJuego");
 let primeraCarta = null;
 let segundaCarta = null;
 let bloqueo = false;
+let GlbCantidadPares = 0; // Variable global para la cantidad de pares
+// Variables para controlar intentos
+let nivel = 1;
+let intentosRestantes = 11 - Math.max(nivel, 1); // mínimo 1
+let esperandoPareja = false;
+let cartaRepetidaTemporal = null;
+let cartasEncontradas = [];
+// Objeto para contar cuántas veces se ha volteado cada carta (por su nombre en inglés)
+let contadorVolteos = {};
+
+// Variables para el temporizador
+let tiempoMaximo = 90; // segundos
+let intervaloTemporizador;
+let tiempoRestante = tiempoMaximo;
+
+
 
 // Recargar el juego al cambiar la orientación del dispositivo
 window.addEventListener("orientationchange", () => {
@@ -47,13 +57,23 @@ window.addEventListener("orientationchange", () => {
   iniciarJuegoFiltrado(rutaJson, subcategoria);
 });
 
+// Inicializa valores según nivel
+function iniciarNivel(n) {
+  nivel = n;
+
+  // Nivel 1 => 10 intentos, hasta mínimo 3
+  intentosRestantes = Math.max(10 - (nivel - 1), 3); 
+  esperandoPareja = false;
+  cartaRepetidaTemporal = null;
+  cartasEncontradas = [];
+  console.log(`🔁 Nivel ${nivel} iniciado con ${intentosRestantes} intentos.`);
+}
+
 // Cargar y filtrar los datos del JSON
 function iniciarJuegoFiltrado(jsonPath, subcategoria) {
   fetch(jsonPath)
     .then(res => res.json())
     .then(data => {
-      console.log("Subcategoría seleccionada:", subcategoria);
-
       const datosFiltrados = data.filter(item =>
         item.subcategoria.trim().toLowerCase() === subcategoria.trim().toLowerCase()
       );
@@ -84,7 +104,7 @@ function renderizarCartas(data) {
 
   const cantidadCartas = obtenerCantidadCartas();
   const cantidadPares = cantidadCartas / 2;
-
+  GlbCantidadPares = cantidadPares; // Guardar la cantidad de pares globalmente 
   const unicos = [];
   const inglesVistos = new Set();
 
@@ -96,9 +116,15 @@ function renderizarCartas(data) {
   });
 
   const seleccion = unicos.sort(() => Math.random() - 0.5).slice(0, cantidadPares);
-  const cartas = [...seleccion, ...seleccion].sort(() => Math.random() - 0.5);
+  //const cartas = [...seleccion, ...seleccion].sort(() => Math.random() - 0.5);
+  const cartas = [...seleccion, ...seleccion].map(obj => ({ ...obj })).sort(() => Math.random() - 0.5);
 
-  cartas.forEach(animal => {
+  cartas.forEach((animal, index) => {
+
+    // Asignamos un ID único temporal a cada carta usando el índice
+    animal._tempId = `carta_${index}`;
+    console.log(`🆔 ID generado: ${animal._tempId} - ${animal.ingles}`);
+
     const flipCard = document.createElement("div");
     flipCard.className = "flip-card";
 
@@ -146,6 +172,10 @@ function manejarClickCarta(carta, animal) {
 
   carta.classList.add("flipped");
 
+  // Contar volteos por ID único temporal
+  contadorVolteos[animal._tempId] = (contadorVolteos[animal._tempId] || 0) + 1;
+
+
   // Solo si tienes la librería de voz incluida
   if (window.responsiveVoice) {
     responsiveVoice.speak(animal.ingles, "US English Female");
@@ -162,20 +192,119 @@ function manejarClickCarta(carta, animal) {
   const esMatch = primeraCarta.animal.ingles === segundaCarta.animal.ingles;
 
   if (esMatch) {
-    setTimeout(resetCartas, 500);
+    // Al encontrar pareja
+    cartasEncontradas.push(primeraCarta.animal.ingles);
+    resetCartas();
+    bloqueo = false;
+    esperandoPareja = false;
+
+    // Verificar si se ganó el juego
+    if (cartasEncontradas.length === GlbCantidadPares) {
+       setTimeout(() => {ShowMessageWin();}, 1000); // Esperar un poco antes de mostrar el mensaje
+    }
   } else {
+    // Si no es pareja
     setTimeout(() => {
       primeraCarta.carta.classList.remove("flipped");
       segundaCarta.carta.classList.remove("flipped");
+
+      const idCarta = primeraCarta.animal._tempId;
+
+      // Solo restamos intento si ya se había volteado esta carta antes y volvió a fallar
+      if (contadorVolteos[idCarta] >= 2) {
+        intentosRestantes--;
+        console.log(`❌ Fallo tras repetir carta "${idCarta}". Intentos restantes: ${intentosRestantes}`);
+
+        if (intentosRestantes <= 0) {
+          ShowMessageLose();
+        }
+      }
+
       resetCartas();
     }, 1000);
   }
+
 }
 
 function resetCartas() {
   primeraCarta = null;
   segundaCarta = null;
   bloqueo = false;
+}
+
+function mostrarModal(titulo, mensaje, callbackReplay, callbackHome) {
+  const modal = document.getElementById("gameModal");
+  const modalTitle = document.getElementById("modalTitle");
+  const modalMessage = document.getElementById("modalMessage");
+  const btnReplay = document.getElementById("btnReplay");
+  const btnHome = document.getElementById("btnHome");
+
+  modalTitle.textContent = titulo;
+  modalMessage.textContent = mensaje;
+  modal.classList.remove("hidden");
+
+  btnReplay.onclick = () => {
+    modal.classList.add("hidden");
+    callbackReplay();
+  };
+
+  btnHome.onclick = () => {
+    modal.classList.add("hidden");
+    callbackHome();
+  };
+}
+
+
+function ShowMessageWin() {
+  clearInterval(intervaloTemporizador);
+  mostrarModal(
+    "🎉 YOU WIN!",
+    "Do you want to play again?",
+    () => {
+      inicializarJuego();
+      iniciarNivel(nivel);
+    },
+    () => {
+      irAlInicio();
+    }
+  );
+}
+
+function ShowMessageLose() {
+  clearInterval(intervaloTemporizador);
+  mostrarModal(
+    "🤖 GAME OVER",
+    "Do you want to try again?",
+    () => {
+      inicializarJuego();
+      iniciarNivel(nivel);
+    },
+    () => {
+      irAlInicio();
+    }
+  );
+}
+
+function iniciarTemporizador() {
+  const temporizadorElemento = document.getElementById("temporizador");
+  temporizadorElemento.style.display = "";
+
+  intervaloTemporizador = setInterval(() => {
+    tiempoRestante--;
+    if (temporizadorElemento) {
+      temporizadorElemento.textContent = `⏱️ Time left: ${tiempoRestante}s`;
+    }
+
+    if (tiempoRestante <= 0) {
+      clearInterval(intervaloTemporizador);
+      ShowMessageLose();
+    }
+  }, 1000);
+}
+
+function reiniciarTemporizador() {
+  clearInterval(intervaloTemporizador);
+  tiempoRestante = tiempoMaximo;
 }
 
 
